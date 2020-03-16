@@ -3,7 +3,7 @@ import logo from "./logo.png";
 function ComponentsTop() {
   return (
     <div>
-      <img src="{logo}" alt="Sick logo" />
+      <img src={logo} alt="Sick logo" />
     </div>
   );
 }
