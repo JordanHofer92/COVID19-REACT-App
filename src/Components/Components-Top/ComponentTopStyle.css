@@ -1,0 +1,6 @@
+img {
+    position: relative;
+    left: 1px;
+    width: 5%;
+    border: 1px black solid;
+}
