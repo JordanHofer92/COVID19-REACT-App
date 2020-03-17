@@ -1,7 +1,7 @@
+
 import React from "react";
 import "./App.css";
 import Map from "./Components/Components-Map/Components-Map.js";
-
 import ComponentPage1 from "./Components/Components-Page1/ComponentPage1.js";
 
 function App(allInfo) {
