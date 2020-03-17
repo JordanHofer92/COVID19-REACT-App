@@ -1,12 +1,10 @@
 import React from 'react'
-import Canvas from './Canvas.js'
-import BarGraph from './bargraph.js'
+import BarGraph from './BarGraph.js'
 
 const ComponentsChart = () => {
     return (
         <div>
-            <Canvas />
-            <BarGraph/>
+            <BarGraph />
         </div>
     )
 }

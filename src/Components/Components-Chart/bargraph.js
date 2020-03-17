@@ -1,45 +1,34 @@
-import Chart from "chart.js";
+import React from 'react';
+import {Bar} from 'react-chartjs-2';
+const Graph = () => {
+const data = {
+  labels: ['Confirmed Cases', 'Confirmed Deaths', 'Hospitalizations', 'New Cases/day', 'New Cases/week', 'Confirmed Recoveries', 'Total Sneezes'],
+  datasets: [
+    {
+      label: 'Dataset1',
+      backgroundColor: 'rgba(255,99,132,0.2)',
+      borderColor: 'rgba(255,99,132,1)',
+      borderWidth: 1,
+      hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+      hoverBorderColor: 'rgba(255,99,132,1)',
+      data: [65, 59, 80, 81, 56, 55, 40]
+    }
+  ]
+};
+    return (
+      <div>
+        <h2>COVID-19 in Canada</h2>
+        <Bar
+          data={data}
+          width={400}
+          height={400}
+          options={{
+            maintainAspectRatio: true
+          }}
+        />
+      </div>
+    );
+  }
 
-const BarGraph = () => {
-    
-    var ctx = document.getElementById('myChart').getContext('2d');
-        
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Deaths', 'Confirmed Cases', 'Recoveries', 'Hospitalizations', 'Purple', 'Orange'],
-            datasets: [{
-                label: '# of Votes',
-                data: [20, 5, 10, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
-}
 
-    export default BarGraph
+export default Graph
