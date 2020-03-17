@@ -1,12 +1,8 @@
-import React from 'react'
-import BarGraph from './BarGraph.js'
+import React from "react";
+//import BarGraph from './BarGraph.js'
 
 const ComponentsChart = () => {
-    return (
-        <div>
-            <BarGraph />
-        </div>
-    )
-}
+  return <div>{/*<BarGraph />*/}</div>;
+};
 
-export default ComponentsChart
+export default ComponentsChart;
