@@ -2,10 +2,10 @@ import React from 'react';
 import {Bar} from 'react-chartjs-2';
 const Graph = () => {
 const data = {
-  labels: ['Confirmed Cases', 'Confirmed Deaths', 'Hospitalizations', 'New Cases/day', 'New Cases/week', 'Confirmed Recoveries'],
+  labels: ['Confirmed Cases', 'Confirmed Deaths', 'Critical Cases', 'New Cases/day', 'Deaths/day', 'Confirmed Recoveries'],
   datasets: [
     {
-      label: 'Dataset1',
+      label: 'Canada',
       backgroundColor: 'rgba(255,99,132,0.2)',
       borderColor: 'rgba(255,99,132,1)',
       borderWidth: 1,
