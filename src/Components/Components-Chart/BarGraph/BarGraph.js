@@ -2,7 +2,7 @@ import React from 'react';
 import {Bar} from 'react-chartjs-2';
 const Graph = () => {
 const data = {
-  labels: ['Confirmed Cases', 'Confirmed Deaths', 'Hospitalizations', 'New Cases/day', 'New Cases/week', 'Confirmed Recoveries', 'Total Sneezes'],
+  labels: ['Confirmed Cases', 'Confirmed Deaths', 'Hospitalizations', 'New Cases/day', 'New Cases/week', 'Confirmed Recoveries'],
   datasets: [
     {
       label: 'Dataset1',

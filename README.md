@@ -107,3 +107,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
    1. had meeting with teammates and broke down big problem into smaller ones;
    2. linked API data to the world map.
 
+
+## Jordan
+
+### 2020-03-14
+* Looked up Chartjs and experimented with use
+* Installed Chartjs and React-Chartjs dependency packages
+
+### 2020-03-15
+* Organized workflow system on Monday app
+* Created Kanban boards for each component
+* Zoomed with team to coordinate tasks
+
+### 2020-03-16
+* Decomposed problems further with team
+* Tried to get charts working in React and encountered issues
+
+### 2020-03-17
+* Resolved issues with charts in React!
+* 
