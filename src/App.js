@@ -5,19 +5,18 @@ import ComponentPage1 from "./Components/Components-Page1/ComponentPage1.js";
 import Chart from './Components/Components-Chart/ComponentsChart.js'
 
 
-function App(allInfo) {
-  console.log(allInfo);
-  console.log(allInfo.allInfo[0]);
+function App(props) {
+  // console.log(props);
+  // console.log(props.allInfo[0]);
 
   return (
     <div className="App">
       <ComponentPage1 />
       <header className="App-header">
-      
+
+        {/* <p>{JSON.stringify(props.allInfo[0])}</p> */}
+        <Map allInfo = {props.allInfo}/>
         <Chart />
-        {/* <p>{JSON.stringify(allInfo.allInfo[0])}</p> */}
-        <p>{JSON.stringify(allInfo.allInfo[0])}</p>
-        <Map />
       </header>
     </div>
   );
