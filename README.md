@@ -86,3 +86,16 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 1. More work on apis - trying to get async await to work in react
    2. Looked for information on Chart.js with Jordan
    3. More work on page 1
+   
+## Ivan
+
+### 2020-03-14
+   1. found an open source world map svg file, imported it into the map component.
+  
+### 2020-03-15
+   1. gave an ID to each country on the map for targetting purpose;
+   2. setup 2 API fetch requests, tested, worked.
+   
+### 2020-03-16
+   1. had meeting with teammates and broke down big problem into smaller ones;
+   2. linked API data to the world map.
