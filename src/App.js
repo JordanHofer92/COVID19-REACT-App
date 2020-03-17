@@ -6,9 +6,9 @@ import Chart from './Components/Components-Chart/ComponentsChart.js'
 import NavBar from './Components/Components-NavBar/NavBar.js'
 
 
-function App(allInfo) {
-  console.log(allInfo);
-  console.log(allInfo.allInfo[0]);
+function App(props) {
+  // console.log(props);
+  // console.log(props.allInfo[0]);
 
   return (
     <div className="App">
@@ -16,7 +16,6 @@ function App(allInfo) {
       </header> */}
         <ComponentPage1 />
         <Chart />
-        <p>{JSON.stringify(allInfo.allInfo[0])}</p>
         {/* <p>{JSON.stringify(allInfo.allInfo[0])}</p> */}
         <Map />
         <NavBar/>
