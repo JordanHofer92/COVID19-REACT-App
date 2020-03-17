@@ -86,3 +86,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 1. More work on apis - trying to get async await to work in react
    2. Looked for information on Chart.js with Jordan
    3. More work on page 1
+
+### 05 16 20
+
+1. Workded on getting geolocation to zoom in on map
+2. Got top of page working

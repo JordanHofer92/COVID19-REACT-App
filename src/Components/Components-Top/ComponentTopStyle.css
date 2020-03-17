@@ -1,6 +1,5 @@
 img {
-    position: relative;
-    left: 1px;
+    margin: 1%;
     width: 5%;
     border: 1px black solid;
 }
