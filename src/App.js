@@ -16,7 +16,7 @@ function App(props) {
 
         {/* <p>{JSON.stringify(props.allInfo[0])}</p> */}
         <Map allInfo = {props.allInfo}/>
-        <Chart />
+        {/* <Chart /> */}
       </header>
     </div>
   );
