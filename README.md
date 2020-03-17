@@ -126,3 +126,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### 2020-03-17
 * Resolved issues with charts in React so they are generating!
 * Began Nav Bar
+* Added icons to nav buttons
+* Began button styles

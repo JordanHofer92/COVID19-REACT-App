@@ -1,9 +1,9 @@
 div.NavButtons {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1em
+    justify-content: space-around;
+    bottom: 0
 }
-div span {
-    border: 1px solid black;
-    padding: 1.5em;
+div button {
+    font-size: 15px;
+    padding: 1em;
 }
