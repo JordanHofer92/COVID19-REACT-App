@@ -24,7 +24,6 @@ Promise.all([
     getCountriesInfo(),
     getTotalInfo()
 ]).then(allInfo => {
-    // console.log(allInfo[0])
     ReactDOM.render(<App allInfo = {allInfo} />, document.getElementById('root'));
 })
 
