@@ -6,6 +6,23 @@ body{
 
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "content"
+  "nav";
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr 2fr 2fr;
+}
+
+/* div.Header {
+  top: 0;
+  grid-area: header;
+} */
+
+div.NavButtons {
+  bottom: 0;
+  grid-area: nav;
 }
 
 
