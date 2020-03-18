@@ -2,7 +2,7 @@ import React from 'react'
 
 const WatchList = () => {
     return (
-        <div>
+        <div className="currentPage">
             <ol>
                 <li>Country</li>
                 <li>Country</li>

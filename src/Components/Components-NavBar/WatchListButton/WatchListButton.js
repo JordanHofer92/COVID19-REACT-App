@@ -3,7 +3,7 @@ import React from 'react'
 const WatchListButton = () => {
 
     return (
-        <button>
+        <button className="button">
             <i className="fas fa-eye"></i><br></br>
             Watchlist
         </button>

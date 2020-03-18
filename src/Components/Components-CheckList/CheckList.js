@@ -2,7 +2,7 @@ import React from 'react'
 
 const CheckList = () => {
     return (
-        <div>
+        <div className="currentPage">
             <ul>
                 <li>Make a plan of action</li>
                 <li>Communicate with the people included in your plan</li>

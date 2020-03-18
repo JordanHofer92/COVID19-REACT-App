@@ -129,3 +129,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * Sourced icons for nav buttons
 * Began button styles
 * Created Rough check list, needs functionality
+
+### 2020-03-18
+* Set up router and got working
+* Created rough watchlist and local news components
+* Began inserting API data into all components
+* Styles Begun!

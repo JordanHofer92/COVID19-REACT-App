@@ -2,7 +2,7 @@ import React from 'react'
 
 const LocalNews = () => {
     return (
-        <div>
+        <div className="currentPage">
             <ul>
                 <li>Articles</li>
                 <li>Articles</li>

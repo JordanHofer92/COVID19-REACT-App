@@ -4,9 +4,7 @@ import "../Components-Top/ComponentTopStyle.css";
 
 function ComponentsTop() {
   return (
-    <div>
       <img src={logo} alt="Sick logo" />
-    </div>
   );
 }
 
