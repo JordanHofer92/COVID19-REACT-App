@@ -2,7 +2,7 @@ import React from 'react'
 import "./Components-Map-Text.css"
 
 const Text = (props) => {
-    console.log(props.allInfo[0])
+    // console.log(props.allInfo[0])
     return (
         <section className="components-map-text">
             <h1>COVID-19 Global Cases Update</h1>
