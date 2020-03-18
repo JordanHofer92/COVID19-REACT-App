@@ -1,5 +1,5 @@
 import React from 'react';
-import {Bar} from 'react-chartjs-2';
+import {Polar} from 'react-chartjs-2';
 const Graph = () => {
 const data = {
   labels: ['Confirmed Cases', 'Confirmed Deaths', 'Critical Cases', 'New Cases/day', 'Deaths/day', 'Confirmed Recoveries'],
@@ -18,7 +18,7 @@ const data = {
     return (
       <div>
         <h2>COVID-19 in Canada</h2>
-        <Bar
+        <Polar
           data={data}
           width={400}
           height={400}
