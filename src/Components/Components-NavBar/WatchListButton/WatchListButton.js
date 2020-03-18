@@ -4,7 +4,7 @@ const WatchListButton = () => {
 
     return (
         <button>
-            <i class="fas fa-eye"></i><br></br>
+            <i className="fas fa-eye"></i><br></br>
             Watchlist
         </button>
         
