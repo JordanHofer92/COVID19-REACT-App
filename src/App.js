@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 import Map from "./Components/Components-Map/Components-Map.js";
 import ComponentPage1 from "./Components/Components-Page1/ComponentPage1.js";
-import Chart from './Components/Components-Chart/BarGraph/BarGraph.js'
+// import Chart from './Components/Components-Chart/BarGraph/BarGraph.js'
 import NavBar from './Components/Components-NavBar/NavBar.js'
 import CheckList from './Components/Components-CheckList/CheckList.js'
 
@@ -18,10 +18,10 @@ function App(props) {
       {/* <header className="App-header">
       </header> */}
         <ComponentPage1 />
-        <Chart />
+        {/* <Chart /> */}
         <CheckList /> 
         {/* <p>{JSON.stringify(allInfo.allInfo[0])}</p> */}
-        <Map />
+        <Map allInfo={props.allInfo}/>
         <NavBar/>
     </div>
   );

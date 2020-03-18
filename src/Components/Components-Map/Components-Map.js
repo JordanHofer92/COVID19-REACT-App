@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Components-Map.css";
 import Text from "./Components-Map-Text/Components-Map-Text.js";
 
-const Map = props => {
+const Map = (props) => {
   const [clickedCountry, setClickedCountry] = useState("Canada");
-  console.log("Clicked Country:" + clickedCountry);
+  // console.log("Clicked Country:" + clickedCountry);
 
   return (
     <div className="components-map">
-      <Text allInfo={props.allInfo} />
+      <Text allInfo={props.allInfo} clickedCountry={clickedCountry} />
       <svg
         viewBox="0 0 1010 666"
         fill="none"
