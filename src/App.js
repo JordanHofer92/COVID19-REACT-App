@@ -4,25 +4,25 @@ import "./App.css";
 import Map from "./Components/Components-Map/Components-Map.js";
 import ComponentPage1 from "./Components/Components-Page1/ComponentPage1.js";
 // import Chart from './Components/Components-Chart/BarGraph/BarGraph.js'
-import NavBar from './Components/Components-NavBar/NavBar.js'
-import CheckList from './Components/Components-CheckList/CheckList.js'
-
+import NavBar from "./Components/Components-NavBar/NavBar.js";
+import CheckList from "./Components/Components-CheckList/CheckList.js";
+import Geolocation from "./Components/Components-Map/Geolocation";
 
 function App(props) {
   // console.log(props);
   // console.log(props.allInfo[0]);
 
   return (
-    
     <div className="App">
+      <Geolocation />
       {/* <header className="App-header">
       </header> */}
-        <ComponentPage1 />
-        {/* <Chart /> */}
-        <CheckList /> 
-        {/* <p>{JSON.stringify(allInfo.allInfo[0])}</p> */}
-        <Map allInfo={props.allInfo}/>
-        <NavBar/>
+      <ComponentPage1 />
+      {/* <Chart /> */}
+      <CheckList />
+      {/* <p>{JSON.stringify(allInfo.allInfo[0])}</p> */}
+      <Map allInfo={props.allInfo} />
+      <NavBar />
     </div>
   );
 }

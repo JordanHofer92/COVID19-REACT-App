@@ -1,6 +1,6 @@
 import React from "react";
 import ComponentsTop from "../Components-Top/ComponentsTop.js";
-function ComponentPage2() {
+function ComponentPage3() {
   return (
     <div>
       <ComponentsTop />
@@ -8,4 +8,4 @@ function ComponentPage2() {
   );
 }
 
-export default ComponentPage2;
+export default ComponentPage3;
