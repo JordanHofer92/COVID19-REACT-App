@@ -6,24 +6,26 @@ body{
 
 .App {
   text-align: center;
-  display: grid;
+  /* display: grid;
   grid-template-areas: 
   "header"
   "content"
   "nav";
   grid-template-columns: 1fr;
-  grid-template-rows: .5fr 2fr 2fr;
+  grid-template-rows: .5fr 2fr 2fr; */
 }
 
 /* div.Header {
   top: 0;
   grid-area: header;
 } */
-
-div.NavButtons {
+.NavButtons {
+  display: flex;
+  justify-content: space-around;
   bottom: 0;
-  grid-area: nav;
 }
-
-
-
+button {
+  bottom: 0;
+  height: 10em;
+  width: 5em;
+}
