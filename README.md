@@ -145,8 +145,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Created Rough check list, needs functionality
 
 ### 2020-03-18
+* Set up router and got working
+* Created rough watchlist and local news components
+* Began inserting API data into all components
+* Styles Begun!
 
-- Set up router and got working
-- Created rough watchlist and local news components
-- Began inserting API data into all components
-- Styles Begun!
+### 2020-03-19
+* Imported google fonts
+* 
