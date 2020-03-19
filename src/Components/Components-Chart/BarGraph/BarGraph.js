@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {Polar} from 'react-chartjs-2';
 const Graph = () => {
@@ -31,4 +32,4 @@ const data = {
   }
 
 
-export default Graph
+// export default Graph

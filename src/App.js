@@ -15,7 +15,7 @@ import LocalNews from "./Components/Components-LocalNews/LocalNews.js";
 
 function App(props) {
   // console.log(props);
-  // console.log(props.allInfo[0]);
+  console.log(props.allInfo);
 
   return (
     <Router>
