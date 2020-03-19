@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import "./App.css";
 import Map from "./Components/Components-Map/Components-Map.js";
 import ComponentPage1 from "./Components/Components-Header/Header.js";
-import Chart from './Components/Components-Chart/BarGraph/BarGraph.js'
+import Chart from './Components/Components-Chart/PolarGraph/PolarGraph.js'
 import MapButton from './Components/Components-NavBar/MapButton/MapButton.js'
 import ChartButton from './Components/Components-NavBar/ChartButton/ChartButton.js'
 import CheckListButton from './Components/Components-NavBar/CheckListButton/CheckListButton.js'
@@ -24,7 +24,7 @@ function App(props) {
           <ComponentPage1 />
           <Switch>
             <Route path="/chart">
-              <Chart />
+              <Chart allInfo={props.allInfo}/>
             </Route>
             <Route path="/checkList">
               <CheckList /> 

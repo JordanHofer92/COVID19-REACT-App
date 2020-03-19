@@ -4,34 +4,24 @@ const CheckList = () => {
   return (
     <div className="currentPage">
       <input type="checkbox" value="1" /> Make a plan of action
-      <br />
       <input type="checkbox" value="2" />
       Communicate with the people included in your plan
-      <br />
       <input type="checkbox" value="3" />
       Get to know your neighbours
-      <br />
       <input type="checkbox" value="4" /> Create an emergency contact list
-      <br />
       <input type="checkbox" value="5" />
       Practice everyday preventative actions
-      <br />
       <input type="checkbox" value="6" />
       Choose a room in your home that can be used for isolation
-      <br />
       <input type="checkbox" value="7" />
-      Don't panic buy, if you want extra supplies, purchase small amounts of
+      Don't panic buy, purchase small amounts of
       non-perishable foods during your regular grocery trips
-      <br />
       <input type="checkbox" value="8" />
       Practice Social distancing
-      <br />
       <input type="checkbox" value="9" />
       Stay home if you feel sick
-      <br />
       <input type="checkbox" value="10" />
       Stay in touch with others through phone or email
-      <br />
       <h2> Articles on Readiness:</h2>
       <ul>
         <li>

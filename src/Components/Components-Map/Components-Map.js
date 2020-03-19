@@ -8,7 +8,6 @@ const Map = (props) => {
 
   return (
     <div className="components-map">
-      <Text allInfo={props.allInfo} clickedCountry={clickedCountry} />
       <svg
         viewBox="0 0 1010 666"
         fill="none"
@@ -2058,6 +2057,7 @@ const Map = (props) => {
           </clipPath>
         </defs>
       </svg>
+      <Text allInfo={props.allInfo} clickedCountry={clickedCountry} />
     </div>
   );
 };
