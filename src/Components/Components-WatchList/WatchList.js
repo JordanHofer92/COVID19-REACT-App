@@ -1,19 +1,24 @@
 import React from 'react'
 
-const WatchList = () => {
+const WatchList = (props) => {
+    
+    // props.allInfo[1].forEach(()=>{
+
+    // })
+
     return (
         <div className="currentPage">
             <ol>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
-                <li>Country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
+                <li>country</li>
             </ol>
         </div>
     )

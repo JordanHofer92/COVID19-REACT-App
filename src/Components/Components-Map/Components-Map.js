@@ -6,9 +6,65 @@ const Map = (props) => {
   const [clickedCountry, setClickedCountry] = useState("Canada");
   // console.log("Clicked Country:" + clickedCountry);
 
+
+
+
+
+
+//// Test Begins
+// the main SVG object and its current viewBox
+var svg = document.querySelector('#worldMap');
+
+var bbox = element.getBBox();
+var viewBox = svg.getAttribute('viewBox');
+var vbox = viewBox.split(' ');
+vbox[0] = parseFloat(vbox[0]);
+vbox[1] = parseFloat(vbox[1]);
+vbox[2] = parseFloat(vbox[2]);
+vbox[3] = parseFloat(vbox[3]);
+
+// the current center of the viewBox
+var cx=vbox[0]+vbox[2]/2;
+var cy=vbox[1]+vbox[3]/2;
+
+// element is the element I want to zoom to
+var element = svg.querySelector('#my-element');
+
+var matrix = element.getTransformToElement(svg);
+
+// the new center
+var newx = (bbox.x + bbox.width/2)*matrix.a + matrix.e;
+var newy = (bbox.y + bbox.height/2)*matrix.d + matrix.f;
+
+// the corresponding top left corner in the current scale
+var absolute_offset_x = vbox[0] + newx - cx;
+var absolute_offset_y = vbox[1] + newy - cy;
+
+// the new scale
+var scale = bbox.width*matrix.a/vbox[2] * 1.2;
+
+var scaled_offset_x = absolute_offset_x + vbox[2]*(1-scale)/2;
+var scaled_offset_y = absolute_offset_y + vbox[3]*(1-scale)/2;
+var scaled_width = vbox[2]*scale;
+var scaled_height = vbox[3]*scale;
+
+svg.setAttribute("viewBox", ""+scaled_offset_x+" "+scaled_offset_y+" "+scaled_width+" "+scaled_height);
+//// Test Ends
+
+
+
+
+
+
+
+
   return (
     <div className="components-map">
-      <svg
+      <Text allInfo={props.allInfo} clickedCountry={clickedCountry} />
+      <svg 
+        id="worldMap"
+        width={document.width}
+        height={Window.width*666/1010}
         viewBox="0 0 1010 666"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

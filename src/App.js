@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import "./App.css";
-import Map from "./Components/Components-Map/Components-Map.js";
+// import Map from "./Components/Components-Map/Components-Map.js";
 import ComponentPage1 from "./Components/Components-Header/Header.js";
 import Chart from './Components/Components-Chart/PolarGraph/PolarGraph.js'
 import MapButton from './Components/Components-NavBar/MapButton/MapButton.js'
@@ -15,36 +15,51 @@ import LocalNews from './Components/Components-LocalNews/LocalNews.js'
 
 
 function App(props) {
+  const [headerColour, setHeaderColour] = React.useState("#00f6ff");
   // console.log(props);
-  // console.log(props.allInfo[0]);
+  console.log(props.allInfo);
 
   return (
     <Router>
       <div className="App">
-          <ComponentPage1 />
-          <Switch>
-            <Route path="/chart">
-              <Chart allInfo={props.allInfo}/>
-            </Route>
-            <Route path="/checkList">
-              <CheckList /> 
-            </Route>
-            <Route path="/map">
-              <Map allInfo={props.allInfo}/>
-            </Route>
-            <Route path="/watchList">
-              <WatchList/>
-            </Route>
-            <Route path="/localNews">
-              <LocalNews/>
-            </Route>
-          </Switch>
+        <ComponentPage1 colour={headerColour} />
+        <Switch>
+          <Route path="/chart">
+            <Chart allInfo={props.allInfo}/>
+          </Route>
+          <Route path="/checkList">
+            <CheckList
+              handleAllChecked={() => {
+                setHeaderColour("blue");
+              }}
+            />
+          </Route>
+          <Route path="/map">
+            {/* <Map allInfo={props.allInfo} /> */}
+          </Route>
+          <Route path="/watchList">
+            <WatchList />
+          </Route>
+          <Route path="/localNews">
+            <LocalNews />
+          </Route>
+        </Switch>
         <nav className="NavButtons">
-          <Link to="/map"><MapButton/></Link>
-          <Link to="/chart"><ChartButton/></Link>
-          <Link to="/checkList"><CheckListButton/></Link>
-          <Link to="/localNews"><LocalNewsButton/></Link>
-          <Link to="/watchList"><WatchListButton/></Link>
+          <Link to="/map">
+            <MapButton />
+          </Link>
+          <Link to="/chart">
+            <ChartButton />
+          </Link>
+          <Link to="/checkList">
+            <CheckListButton />
+          </Link>
+          <Link to="/localNews">
+            <LocalNewsButton />
+          </Link>
+          <Link to="/watchList">
+            <WatchListButton />
+          </Link>
         </nav>
       </div>
     </Router>
