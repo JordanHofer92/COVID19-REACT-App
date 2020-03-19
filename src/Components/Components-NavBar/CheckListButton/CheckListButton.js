@@ -3,7 +3,7 @@ import React from 'react'
 const CheckListButton = () => {
 
     return (
-        <button>
+        <button className="checklistButton">
             <i className="fas fa-tasks"></i><br></br>
             Checklist
         </button>
