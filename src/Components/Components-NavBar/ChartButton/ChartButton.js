@@ -4,8 +4,8 @@ import React from 'react'
 const ChartButton = () => {
 
     return (
-        <button>
-            <i class="fas fa-chart-line"></i><br></br>
+        <button className="chartButton">
+            <i className="fas fa-chart-line"></i><br></br>
             Charts
         </button>
         

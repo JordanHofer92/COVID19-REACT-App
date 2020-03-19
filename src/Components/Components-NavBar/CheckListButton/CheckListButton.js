@@ -1,10 +1,10 @@
-import React from 'react'
-
+import React from "react";
+import Checklist from "./Checklist/Checklist.js";
 const CheckListButton = () => {
-
+  
     return (
-        <button>
-            <i class="fas fa-tasks"></i><br></br>
+        <button className="checklistButton">
+            <i className="fas fa-tasks"></i><br></br>
             Checklist
         </button>
 

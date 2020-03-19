@@ -1,9 +1,10 @@
 div.NavButtons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     bottom: 0
 }
 div button {
     font-size: 15px;
-    padding: 1em;
+    height: 200px;
+    width: 80px;
 }
