@@ -1,12 +1,19 @@
+/* Font Families: Baloo Chettan 2 : 400, 600, 700
+                  Open Sans: 300, 400 */
+
+
 body{
   max-width: 100%;
   margin: 0;
   background-color: #02182b;
   color: #26AFFF;
+  font-family: 'Baloo Chettan 2';
+  font-weight: 600
 }
 
 h1 {
   color: #00f6ff;
+  font-weight: 700;
 }
 
 .App {
@@ -19,7 +26,7 @@ h1 {
   "content"
   "nav";
   grid-template-columns: 1fr;
-  grid-template-rows: .5fr 4fr 1fr;
+  grid-template-rows: .5fr 4fr .5fr;
 }
 
 div.header {
@@ -42,20 +49,24 @@ div.currentPage {
   max-width: 100%;
   margin: 10px;
   grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center5.5;
 }
 
-.NavButtons {
-  background: #02182b;
+nav {
+  background-color: #d7263d;
+  width: 100%;
   grid-area: nav;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-
+  justify-content: space-around;
+  align-items: center;
 }
 
 button {
-  border: 1px solid black;
-  height: 13em;
+  border: none;
+  font-size: 16px;
+  height: 6em;
   color: #02182b;
   background-color: #d7263d;
 }
@@ -63,4 +74,10 @@ button {
 button:focus {
   outline: none;
   background-color: #26AFFF;
+
+}
+
+button:active {
+  background-color: #26AFFF;
+
 }
