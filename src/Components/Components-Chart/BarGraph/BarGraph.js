@@ -11,13 +11,13 @@ const data = {
       borderWidth: 1,
       hoverBackgroundColor: 'rgba(255,99,132,0.4)',
       hoverBorderColor: 'rgba(255,99,132,1)',
-      data: [65, 59, 80, 81, 56, 55, 40]
+      data: [65, 59, 80, 81, 56, 55]
     }
   ]
 };
     return (
-      <div>
-        <h2>COVID-19 in Canada</h2>
+      <div className="currentPage">
+        <h1>COVID-19 in Canada</h1>
         <Polar
           data={data}
           width={400}
