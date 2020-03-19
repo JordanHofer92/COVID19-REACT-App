@@ -14,19 +14,24 @@ import WatchList from "./Components/Components-WatchList/WatchList.js";
 import LocalNews from "./Components/Components-LocalNews/LocalNews.js";
 
 function App(props) {
+  const [headerColour, setHeaderColour] = React.useState("#00f6ff");
   // console.log(props);
   console.log(props.allInfo);
 
   return (
     <Router>
       <div className="App">
-        <ComponentPage1 />
+        <ComponentPage1 colour={headerColour} />
         <Switch>
           <Route path="/chart">
             <Chart />
           </Route>
           <Route path="/checkList">
-            <CheckList />
+            <CheckList
+              handleAllChecked={() => {
+                setHeaderColour("blue");
+              }}
+            />
           </Route>
           <Route path="/map">
             <Map allInfo={props.allInfo} />
