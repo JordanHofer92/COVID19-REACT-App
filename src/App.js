@@ -10,7 +10,7 @@ import CheckList from './Components/Components-CheckList/CheckList.js'
 
 function App(props) {
   // console.log(props);
-  // console.log(props.allInfo[0]);
+  console.log(props.allInfo);
 
   return (
     
