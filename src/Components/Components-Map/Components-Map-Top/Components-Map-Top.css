@@ -1,0 +1,30 @@
+.components-map-top, .components-map-infoAndButton div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.components-map-infoAndButton {
+    place-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.components-map-infoAndButton div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #26AFFF;
+    width:18%;
+}
+
+h1 {
+    font-size: 2rem;
+    place-self: center;
+}
+
+span {
+    font-size: 1rem;
+}

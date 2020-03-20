@@ -105,7 +105,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
    
 ### 2020-03-16
    1. had meeting with teammates and broke down big problem into smaller ones;
-   2. linked API data to the world map.
+   2. started to link API data to the world map;
+   3. started to add onClick event for each country.
+
+### 2020-03-17
+   1. linked API data to map;
+   2. finished adding onClick event for each country;
+   3. made a function to show country data when user click on a country.
+
+### 2020-03-18
+   1. researched how to make zoom-in zoom-out effects;
+   2. started to 
 
 
 ## Jordan
@@ -129,3 +139,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * Sourced icons for nav buttons
 * Began button styles
 * Created Rough check list, needs functionality
+
+### 2020-03-18
+* Set up router and got working
+* Created rough watchlist and local news components
+* Began inserting API data into all components
+* Styles Begun!
