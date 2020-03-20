@@ -1,0 +1,15 @@
+.component-map-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+button {
+    border: 1px solid #26AFFF;
+    background: none;
+    width: 2rem;
+    height: min-content;
+    color: #16F6FF;
+    font-size: 1.5rem;
+}
