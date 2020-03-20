@@ -12,8 +12,16 @@ body{
 }
 
 h1 {
-  color: #00f6ff;
+  color: #02182b;
   font-weight: 700;
+}
+
+a {
+  color: #d7263d;
+}
+
+ul {
+  list-style: none;
 }
 
 .App {
@@ -30,7 +38,7 @@ h1 {
 }
 
 div.header {
-  background: #d7263d;
+  background:linear-gradient(to left, #d7263d, #02182b);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +51,12 @@ div.header h1 {
 
 div.components-map{
   margin: 10px;
+  max-width: 100%;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.currentPage {
@@ -51,7 +65,7 @@ div.currentPage {
   grid-area: content;
   display: flex;
   flex-direction: column;
-  justify-content: center5.5;
+  justify-content: center;
 }
 
 nav {
@@ -77,7 +91,6 @@ button:focus {
 
 }
 
-button:active {
+button:target {
   background-color: #26AFFF;
-
 }

@@ -2097,6 +2097,7 @@ const Map = (props) => {
           </clipPath>
         </defs>
       </svg>
+      {/* <Text allInfo={props.allInfo} clickedCountry={clickedCountry} /> */}
     </div>
   );
 };
