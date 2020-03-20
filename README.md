@@ -87,22 +87,32 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
    2. Looked for information on Chart.js with Jordan
    3. More work on page 1
 
-
 ### 05 16 20
 
 1. Workded on getting geolocation to zoom in on map
 2. Got top of page working
 
-   
+### 05 17 20
+
+1. Stuck on geolocation - tried several solutions from web
+2. Some work on top of pages
+
+### 05 18 20
+
+1. One on one with instructor -help with geolocation and callbacks
+2. Completed checklist
+
 ## Ivan
 
 ### 2020-03-14
-   1. found an open source world map svg file, imported it into the map component.
-  
+
+1.  found an open source world map svg file, imported it into the map component.
+
 ### 2020-03-15
-   1. gave an ID to each country on the map for targetting purpose;
-   2. setup 2 API fetch requests, tested, worked.
-   
+
+1.  gave an ID to each country on the map for targetting purpose;
+2.  setup 2 API fetch requests, tested, worked.
+
 ### 2020-03-16
    1. had meeting with teammates and broke down big problem into smaller ones;
    2. started to link API data to the world map;
@@ -115,33 +125,45 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2020-03-18
    1. researched how to make zoom-in zoom-out effects;
-   2. started to 
+   2. started to work on zooming effects;
+   3. noticed a bug: when use click on a country which API has no data of, system will crush.
 
+### 2020-03-19
+   1. fixed the bug noticed yesterday;
+   3. completed basic zoom in and out effects, still need to work on drap-able function for the map.
 
 ## Jordan
 
 ### 2020-03-14
-* Looked up Chartjs and experimented with use
-* Installed Chartjs and React-Chartjs dependency packages
+
+- Looked up Chartjs and experimented with use
+- Installed Chartjs and React-Chartjs dependency packages
 
 ### 2020-03-15
-* Organized workflow system on Monday app
-* Created Kanban boards for each component
-* Zoomed with team to coordinate tasks
+
+- Organized workflow system on Monday app
+- Created Kanban boards for each component
+- Zoomed with team to coordinate tasks
 
 ### 2020-03-16
-* Decomposed problems further with team
-* Tried to get charts working in React and encountered issues
+
+- Decomposed problems further with team
+- Tried to get charts working in React and encountered issues
 
 ### 2020-03-17
-* Resolved issues with charts in React so they are generating!
-* Began Nav Bar
-* Sourced icons for nav buttons
-* Began button styles
-* Created Rough check list, needs functionality
+
+- Resolved issues with charts in React so they are generating!
+- Began Nav Bar
+- Sourced icons for nav buttons
+- Began button styles
+- Created Rough check list, needs functionality
 
 ### 2020-03-18
 * Set up router and got working
 * Created rough watchlist and local news components
 * Began inserting API data into all components
 * Styles Begun!
+
+### 2020-03-19
+* Imported google fonts
+
