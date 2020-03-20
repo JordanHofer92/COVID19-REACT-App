@@ -166,9 +166,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2020-03-19
 * Imported google fonts
-<<<<<<< HEAD
 * Applied more styles
 * 
-=======
-
->>>>>>> b20abc03739f84d4519336e7d727aff1f119fd68

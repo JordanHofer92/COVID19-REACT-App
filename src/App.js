@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import "./App.css";
-// import Map from "./Components/Components-Map/Components-Map.js";
+import Map from "./Components/Components-Map/Components-Map.js";
 import ComponentPage1 from "./Components/Components-Header/Header.js";
-import Chart from './Components/Components-Chart/PolarGraph/PolarGraph.js'
+// import Chart from './Components/Components-Chart/PolarGraph/PolarGraph.js'
 import MapButton from './Components/Components-NavBar/MapButton/MapButton.js'
 import ChartButton from './Components/Components-NavBar/ChartButton/ChartButton.js'
 import CheckListButton from './Components/Components-NavBar/CheckListButton/CheckListButton.js'
@@ -27,11 +27,7 @@ function App(props) {
         <ComponentPage1 colour={headerColour} />
         <Switch>
           <Route path="/chart">
-<<<<<<< HEAD
-            <Chart allInfo={props.allInfo}/>
-=======
-            <Map />
->>>>>>> b20abc03739f84d4519336e7d727aff1f119fd68
+            {/* <Chart allInfo={props.allInfo}/> */}
           </Route>
           <Route path="/checkList">
             <CheckList
@@ -41,11 +37,7 @@ function App(props) {
             />
           </Route>
           <Route path="/map">
-<<<<<<< HEAD
-            {/* <Map allInfo={props.allInfo} /> */}
-=======
             <Map allInfo={countryData} />
->>>>>>> b20abc03739f84d4519336e7d727aff1f119fd68
           </Route>
           <Route path="/watchList">
             <WatchList />
