@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Polar} from 'react-chartjs-2';
 
 const Graph = (props) => {
+  const [ selectedCountry, setSelectedCountry] = useState('Select Country')
   let country, cases, todayCases, deaths, todayDeaths, recovered, critical;
+  
   const data = {
   labels: ['Total Cases', 'New Cases Today', 'Critical Cases', 'Total Deaths', 'Deaths Today', 'Confirmed Recoveries'],
   datasets: [
@@ -18,8 +20,9 @@ const Graph = (props) => {
     }
   ]
 };
+
   props.allInfo[0].forEach(element => {
-    if (element.country === props.clickedCountry){
+    if (element.country === selectedCountry){
         country = element.country;
         cases = element.cases;
         todayCases = element.todayCases;
@@ -27,11 +30,12 @@ const Graph = (props) => {
         todayDeaths = element.todayDeaths;
         recovered = element.recovered;
         critical = element.critical;
-    }
+  } 
+
   });
     return (
       <div className="currentPage">
-        <h2>COVID-19 in <input>{country}</input></h2>
+        <h2>COVID-19 in <input type="text" onChange={() => setSelectedCountry(country)}>{selectedCountry}</input></h2>
         <Polar
           data={data}
           width={400}

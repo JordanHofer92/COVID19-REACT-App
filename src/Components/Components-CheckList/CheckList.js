@@ -76,7 +76,7 @@ const CheckList = props => {
           name="plan"
           value="7"
         />
-        Don't panic buy, if you want extra supplies, purchase small amounts of
+        Don't panic buy, purchase small amounts of
         non-perishable foods during your regular grocery trips
         <br />
         <input
