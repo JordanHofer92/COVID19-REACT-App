@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
 import "./App.css";
 // import Map from "./Components/Components-Map/Components-Map.js";
 import ComponentPage1 from "./Components/Components-Header/Header.js";
@@ -16,8 +16,10 @@ import LocalNews from './Components/Components-LocalNews/LocalNews.js'
 
 function App(props) {
   const [headerColour, setHeaderColour] = React.useState("#00f6ff");
-  // console.log(props);
-  console.log(props.allInfo);
+
+  // Assign API data to variables
+  const countryData = [props.allInfo[0], props.allInfo[1]];
+  const newsData = props.allInfo[2].articles;
 
   return (
     <Router>
@@ -25,7 +27,11 @@ function App(props) {
         <ComponentPage1 colour={headerColour} />
         <Switch>
           <Route path="/chart">
+<<<<<<< HEAD
             <Chart allInfo={props.allInfo}/>
+=======
+            <Map />
+>>>>>>> b20abc03739f84d4519336e7d727aff1f119fd68
           </Route>
           <Route path="/checkList">
             <CheckList
@@ -35,13 +41,17 @@ function App(props) {
             />
           </Route>
           <Route path="/map">
+<<<<<<< HEAD
             {/* <Map allInfo={props.allInfo} /> */}
+=======
+            <Map allInfo={countryData} />
+>>>>>>> b20abc03739f84d4519336e7d727aff1f119fd68
           </Route>
           <Route path="/watchList">
             <WatchList />
           </Route>
           <Route path="/localNews">
-            <LocalNews />
+            <LocalNews newsData={newsData}/>
           </Route>
         </Switch>
         <nav className="NavButtons">

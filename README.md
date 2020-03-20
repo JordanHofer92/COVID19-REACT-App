@@ -114,9 +114,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 2.  setup 2 API fetch requests, tested, worked.
 
 ### 2020-03-16
+   1. had meeting with teammates and broke down big problem into smaller ones;
+   2. started to link API data to the world map;
+   3. started to add onClick event for each country.
 
-1.  had meeting with teammates and broke down big problem into smaller ones;
-2.  linked API data to the world map.
+### 2020-03-17
+   1. linked API data to map;
+   2. finished adding onClick event for each country;
+   3. made a function to show country data when user click on a country.
+
+### 2020-03-18
+   1. researched how to make zoom-in zoom-out effects;
+   2. started to work on zooming effects;
+   3. noticed a bug: when use click on a country which API has no data of, system will crush.
+
+### 2020-03-19
+   1. fixed the bug noticed yesterday;
+   3. completed basic zoom in and out effects, still need to work on drap-able function for the map.
 
 ## Jordan
 
@@ -152,5 +166,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2020-03-19
 * Imported google fonts
+<<<<<<< HEAD
 * Applied more styles
 * 
+=======
+
+>>>>>>> b20abc03739f84d4519336e7d727aff1f119fd68

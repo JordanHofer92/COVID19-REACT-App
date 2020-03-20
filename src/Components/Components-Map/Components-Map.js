@@ -1,71 +1,55 @@
 import React, { useState } from "react";
 import "./Components-Map.css";
-import Text from "./Components-Map-Text/Components-Map-Text.js";
+import Top from "./Components-Map-Top/Components-Map-Top.js";
 
 const Map = (props) => {
+  // Define the country clicked by user
   const [clickedCountry, setClickedCountry] = useState("Canada");
-  // console.log("Clicked Country:" + clickedCountry);
+  
+  // Define states of viewbox size
+  const [viewBoxWidth, setViewBoxWidth] = useState(1010);
+  const [viewBoxHeight, setViewBoxHeight] = useState(666);
+  const myViewBox = [0, 0, viewBoxWidth, viewBoxHeight]
+
+  // Define functions to zoom-in and zoom-out with "+" and "-" button
+  function increaseViewBoxWidth() {
+    setViewBoxWidth(viewBoxWidth*(1.2))
+  }
+
+  function decreaseViewBoxWidth() {
+    setViewBoxWidth(viewBoxWidth/(1.2))
+  }
+
+  function increaseViewBoxHeight() {
+    setViewBoxHeight(viewBoxHeight*(1.2))
+  }
+
+  function decreaseViewBoxHeight() {
+    setViewBoxHeight(viewBoxHeight/(1.2))
+  }
 
 
+// Sudo code for zoom to clicked country:
+  //preserveAspectRatio = defer? <align> <meetOrSlice>?
+  // 1. find the viewbox for each country
+  // 2. handle click, change viewbox to that country
+        // a. useState,
+        // b. write a function,  when clickedCountry, setViewBox =...
 
-
-
-
-//// Test Begins
-// the main SVG object and its current viewBox
-var svg = document.querySelector('#worldMap');
-
-var bbox = element.getBBox();
-var viewBox = svg.getAttribute('viewBox');
-var vbox = viewBox.split(' ');
-vbox[0] = parseFloat(vbox[0]);
-vbox[1] = parseFloat(vbox[1]);
-vbox[2] = parseFloat(vbox[2]);
-vbox[3] = parseFloat(vbox[3]);
-
-// the current center of the viewBox
-var cx=vbox[0]+vbox[2]/2;
-var cy=vbox[1]+vbox[3]/2;
-
-// element is the element I want to zoom to
-var element = svg.querySelector('#my-element');
-
-var matrix = element.getTransformToElement(svg);
-
-// the new center
-var newx = (bbox.x + bbox.width/2)*matrix.a + matrix.e;
-var newy = (bbox.y + bbox.height/2)*matrix.d + matrix.f;
-
-// the corresponding top left corner in the current scale
-var absolute_offset_x = vbox[0] + newx - cx;
-var absolute_offset_y = vbox[1] + newy - cy;
-
-// the new scale
-var scale = bbox.width*matrix.a/vbox[2] * 1.2;
-
-var scaled_offset_x = absolute_offset_x + vbox[2]*(1-scale)/2;
-var scaled_offset_y = absolute_offset_y + vbox[3]*(1-scale)/2;
-var scaled_width = vbox[2]*scale;
-var scaled_height = vbox[3]*scale;
-
-svg.setAttribute("viewBox", ""+scaled_offset_x+" "+scaled_offset_y+" "+scaled_width+" "+scaled_height);
-//// Test Ends
-
-
-
-
-
-
-
-
+  // Render component
   return (
     <div className="components-map">
-      <Text allInfo={props.allInfo} clickedCountry={clickedCountry} />
+      <Top 
+        allInfo={props.allInfo} 
+        clickedCountry={clickedCountry} 
+        increaseViewBoxWidth={increaseViewBoxWidth}
+        increaseViewBoxHeight={increaseViewBoxHeight}
+        decreaseViewBoxWidth={decreaseViewBoxWidth}
+        decreaseViewBoxHeight={decreaseViewBoxHeight} 
+      />
       <svg 
         id="worldMap"
-        width={document.width}
-        height={Window.width*666/1010}
-        viewBox="0 0 1010 666"
+        viewBox={myViewBox}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -2113,7 +2097,7 @@ svg.setAttribute("viewBox", ""+scaled_offset_x+" "+scaled_offset_y+" "+scaled_wi
           </clipPath>
         </defs>
       </svg>
-      <Text allInfo={props.allInfo} clickedCountry={clickedCountry} />
+      {/* <Text allInfo={props.allInfo} clickedCountry={clickedCountry} /> */}
     </div>
   );
 };
