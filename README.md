@@ -69,38 +69,51 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Kevin
 
-### 05 13 20
+### 03 13 20
 
 1. Received assignment.
    2. Zoomed with Jordan and Ivan and Jonathan throughout the day
    3. Researched Apis and React, started laying out components
 
 
-    ### 05 14 20
+    ### 03 14 20
     1.  Began working on apis
     2. Set up PAge 1 and 2
     3. Set up Top of page and logos
 
-    ### 05 15 20
+    ### 03 15 20
 
 1. More work on apis - trying to get async await to work in react
    2. Looked for information on Chart.js with Jordan
    3. More work on page 1
 
-### 05 16 20
+### 05 14 20
 
 1. Workded on getting geolocation to zoom in on map
 2. Got top of page working
 
-### 05 17 20
+### 03 17 20
 
 1. Stuck on geolocation - tried several solutions from web
 2. Some work on top of pages
 
-### 05 18 20
+### 03 18 20
 
 1. One on one with instructor -help with geolocation and callbacks
 2. Completed checklist
+
+03 19 20
+
+1. Trying to find a simpler solution for checklist
+2. Some minor styling
+
+03 20 20
+
+1. Several zoom calls
+2. Some more checklist work
+
+03 21 20
+Work on getting top 10 countries to populate
 
 ## Ivan
 
@@ -114,23 +127,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 2.  setup 2 API fetch requests, tested, worked.
 
 ### 2020-03-16
-   1. had meeting with teammates and broke down big problem into smaller ones;
-   2. started to link API data to the world map;
-   3. started to add onClick event for each country.
+
+1.  had meeting with teammates and broke down big problem into smaller ones;
+2.  started to link API data to the world map;
+3.  started to add onClick event for each country.
 
 ### 2020-03-17
-   1. linked API data to map;
-   2. finished adding onClick event for each country;
-   3. made a function to show country data when user click on a country.
+
+1.  linked API data to map;
+2.  finished adding onClick event for each country;
+3.  made a function to show country data when user click on a country.
 
 ### 2020-03-18
-   1. researched how to make zoom-in zoom-out effects;
-   2. started to work on zooming effects;
-   3. noticed a bug: when use click on a country which API has no data of, system will crush.
+
+1.  researched how to make zoom-in zoom-out effects;
+2.  started to work on zooming effects;
+3.  noticed a bug: when use click on a country which API has no data of, system will crush.
 
 ### 2020-03-19
-   1. fixed the bug noticed yesterday;
-   3. completed basic zoom in and out effects, still need to work on drap-able function for the map.
+
+1.  fixed the bug noticed yesterday;
+2.  completed basic zoom in and out effects, still need to work on drap-able function for the map.
 
 ## Jordan
 
@@ -159,12 +176,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - Created Rough check list, needs functionality
 
 ### 2020-03-18
-* Set up router and got working
-* Created rough watchlist and local news components
-* Began inserting API data into all components
-* Styles Begun!
+
+- Set up router and got working
+- Created rough watchlist and local news components
+- Began inserting API data into all components
+- Styles Begun!
 
 ### 2020-03-19
-* Imported google fonts
-* Applied more styles
-* 
+
+- Imported google fonts
+- Applied more styles
+-
