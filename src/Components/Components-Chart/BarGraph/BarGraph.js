@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
+import CountrySelector from '../CountrySelector/CountrySelector.js'
+
+
 var country, cases, todayCases, deaths, todayDeaths, recovered, critical;
 const Graph = (props) => {
-  const [selectedCountry, setSelectedCountry] = useState("Canada");
+  const [selectedCountry, setSelectedCountry] = useState("Select Country");
 	function changeSelectedCountry() {
 		setSelectedCountry(document.getElementById("graphCountry").value);
   }
@@ -66,25 +69,20 @@ const Graph = (props) => {
 			data: [cases, todayCases, critical, deaths, todayDeaths, recovered]
     }]
 	};
-
 	return (
 		<div className="currentPage">
 			<h2>COVID-19 in {country}</h2>
 			<Bar
 				data={dataa}
-				width={400}
-				height={400}
+				width={300}
+				height={250}
 				options={{
 					maintainAspectRatio: true
 				}}
 			/>
 			<form>
-				<input
-					type="text"
-					id="graphCountry"
-					value={selectedCountry}
-				></input>
-				<button onClick={changeSelectedCountry}>Select Country</button>
+				<button className="graphCountryButton" onClick={changeSelectedCountry}>Select Country</button>
+				<CountrySelector/>
 			</form>
 		</div>
 	);

@@ -39,14 +39,14 @@ const Map = (props) => {
   // Render component
   return (
     <div className="components-map">
-      <Top 
+      {/* <Top 
         allInfo={props.allInfo} 
         clickedCountry={clickedCountry} 
         increaseViewBoxWidth={increaseViewBoxWidth}
         increaseViewBoxHeight={increaseViewBoxHeight}
         decreaseViewBoxWidth={decreaseViewBoxWidth}
         decreaseViewBoxHeight={decreaseViewBoxHeight} 
-      />
+      /> */}
       <svg 
         id="worldMap"
         viewBox={myViewBox}
@@ -2097,7 +2097,14 @@ const Map = (props) => {
           </clipPath>
         </defs>
       </svg>
-      {/* <Text allInfo={props.allInfo} clickedCountry={clickedCountry} /> */}
+      <Top 
+        allInfo={props.allInfo} 
+        clickedCountry={clickedCountry} 
+        increaseViewBoxWidth={increaseViewBoxWidth}
+        increaseViewBoxHeight={increaseViewBoxHeight}
+        decreaseViewBoxWidth={decreaseViewBoxWidth}
+        decreaseViewBoxHeight={decreaseViewBoxHeight} 
+      />
     </div>
   );
 };

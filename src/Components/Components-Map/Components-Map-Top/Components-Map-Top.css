@@ -16,15 +16,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #26AFFF;
+    color: #02182b;
     width:18%;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5em;
     place-self: center;
 }
 
 span {
-    font-size: 1rem;
+    font-size: 1em;
 }

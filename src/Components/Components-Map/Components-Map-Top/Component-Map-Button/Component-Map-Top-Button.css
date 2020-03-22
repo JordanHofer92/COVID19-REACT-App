@@ -6,10 +6,10 @@
 }
 
 .zoomButton {
-    border: 1px solid #26AFFF;
+    border: 1px solid #02182b;
     background: none;
     width: 2rem;
     height: min-content;
-    color: #16F6FF;
+    color: #02182b;
     font-size: 1.5rem;
 }
