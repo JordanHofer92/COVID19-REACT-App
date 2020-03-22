@@ -199,4 +199,4 @@ Work on getting top 10 countries to populate
 * Collaborative troubleshooting on checklist functionality with Kevin(resolution-pending)
 * Resolved live chart information issue
 * Re-styled for accessibility and consistency
-* Added menu in graph for Coutnry Selection
+* Added menu in graph for Country Selection
