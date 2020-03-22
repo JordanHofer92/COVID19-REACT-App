@@ -9,13 +9,13 @@ import ChartButton from './Components/Components-NavBar/ChartButton/ChartButton.
 import CheckListButton from './Components/Components-NavBar/CheckListButton/CheckListButton.js'
 import LocalNewsButton from './Components/Components-NavBar/LocalNewsButton/LocalNewsButton.js'
 import WatchListButton from './Components/Components-NavBar/WatchListButton/WatchListButton.js'
-// import CheckList from './Components/Components-CheckList/CheckList.js'
-import WatchList from './Components/Components-WatchList/WatchList.js'
+import CheckList from './Components/Components-CheckList/CheckList.js'
+// import WatchList from './Components/Components-WatchList/WatchList.js'
 import LocalNews from './Components/Components-LocalNews/LocalNews.js'
 
 
 function App(props) {
-  // const [headerColour, setHeaderColour] = React.useState("#00f6ff");
+  const [headerColour, setHeaderColour] = React.useState("#d7263d");
 
   // Assign API data to variables
   const countryData = [props.allInfo[0], props.allInfo[1]];
@@ -31,17 +31,17 @@ function App(props) {
             <Graph allInfo={props.allInfo}/>
           </Route>
           <Route path="/checkList">
-            {/* <CheckList
+            <CheckList
               handleAllChecked={() => {
-                setHeaderColour("blue");
+                setHeaderColour("green");
               }}
-            /> */}
+            />
           </Route>
           <Route path="/map">
             <Map allInfo={countryData} />
           </Route>
           <Route path="/watchList">
-            <WatchList />
+            {/* <WatchList /> */}
           </Route>
           <Route path="/localNews">
             <LocalNews newsData={newsData}/>

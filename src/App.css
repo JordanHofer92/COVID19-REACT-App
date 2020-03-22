@@ -5,8 +5,8 @@
 body{
   max-width: 100%;
   margin: 0;
-  background-color: #02182b;
-  color: #26AFFF;
+  background-color: #bedaf2;
+  color: #02182b;
   font-family: 'Baloo Chettan 2';
   font-weight: 600
 }
@@ -17,6 +17,10 @@ h1 {
 }
 
 a {
+  color: #02182b;
+}
+
+a:hover {
   color: #d7263d;
 }
 
@@ -38,11 +42,15 @@ ul {
 }
 
 div.header {
-  background:linear-gradient(to left, #d7263d, #02182b);
+  background:#26AFFF;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   grid-area: header;
+}
+
+i.fa-biohazard{
+  color: #d7263d;
 }
 
 div.header h1 {
@@ -68,8 +76,20 @@ div.currentPage {
   justify-content: center;
 }
 
+input {
+  height: 3em;
+  font-size: 12px;
+}
+
+.graphCountryButton {
+  height: 3em;
+  font-size: 13px;
+}
+
 nav {
-  background-color: #d7263d;
+  position: fixed;
+  bottom: 0;
+  background-color: #26AFFF;
   width: 100%;
   grid-area: nav;
   display: flex;
@@ -77,20 +97,23 @@ nav {
   align-items: center;
 }
 
+
 button {
   border: none;
+  font-family: 'Baloo Chettan 2';
   font-size: 16px;
   height: 6em;
+  flex: 1;
   color: #02182b;
-  background-color: #d7263d;
+  background-color: #26AFFF;
 }
 
 button:focus {
   outline: none;
-  background-color: #26AFFF;
+  background-color: #d7263d;
 
 }
 
 button:target {
-  background-color: #26AFFF;
+  background-color: #d7263d;
 }

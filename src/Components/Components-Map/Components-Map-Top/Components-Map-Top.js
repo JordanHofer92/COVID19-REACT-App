@@ -38,7 +38,7 @@ const Text = (props) => {
                     <span>Critical: {countryData.critical}</span>
                 </div>
                 <div>
-                    <label for="zoomButtons">Map Zoom:</label>
+                    <label for="zoomButtons">Zoom:</label>
                     <Button 
                         id="zoomButtons" 
                         increaseViewBoxWidth={props.increaseViewBoxWidth} 
