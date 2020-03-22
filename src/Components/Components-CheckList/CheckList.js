@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./CheckList.css";
 const CheckList = props => {
   const { handleAllChecked } = props;
 
@@ -14,6 +14,7 @@ const CheckList = props => {
 
   return (
     <div className="currentPage">
+      <h2> Checklist:</h2>
       <form>
         <input
           onChange={checkIfAllChecked}
@@ -76,8 +77,8 @@ const CheckList = props => {
           name="plan"
           value="7"
         />
-        Don't panic buy, purchase small amounts of
-        non-perishable foods during your regular grocery trips
+        Don't panic buy, purchase small amounts of non-perishable foods during
+        your regular grocery trips
         <br />
         <input
           onChange={checkIfAllChecked}
@@ -110,17 +111,29 @@ const CheckList = props => {
       <h2> Articles on Readiness:</h2>
       <ul>
         <li>
-          <a rel="noopener noreferrer" target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html"
+          >
             CDC COVID-19 Preparation and Prevention
           </a>
         </li>
         <li>
-          <a rel="noopener noreferrer" target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov"
+          >
             WHO Coronavirus Database
           </a>
         </li>
         <li>
-          <a rel="noopener noreferrer" target="_blank" href="http://www.cidrap.umn.edu/infectious-disease-topics/covid-19">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="http://www.cidrap.umn.edu/infectious-disease-topics/covid-19"
+          >
             CIDRAP COVID-19 Publication Index
           </a>
         </li>
