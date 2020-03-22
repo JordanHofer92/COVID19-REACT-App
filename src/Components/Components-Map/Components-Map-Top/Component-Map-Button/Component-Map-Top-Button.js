@@ -14,8 +14,8 @@ const Button = (props) => {
 
     return (
         <div className = "component-map-button">
-            <button onClick={zoomIn}>+</button>
-            <button onClick={zoomOut}>-</button>
+            <button className="zoomButton" onClick={zoomIn}>+</button>
+            <button className="zoomButton" onClick={zoomOut}>-</button>
         </div>
     )
 }

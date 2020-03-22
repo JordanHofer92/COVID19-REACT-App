@@ -184,6 +184,17 @@ Work on getting top 10 countries to populate
 
 ### 2020-03-19
 
-- Imported google fonts
-- Applied more styles
--
+* Imported google fonts
+* Applied styles
+
+### 2020-03-20
+
+* Extended Project deadline to Monday
+* Received community client project
+* Assembled and sent project brief to Client
+* Collaborative troubleshooting on live chart information with Ivan(resolution-pending)
+
+### 2020-03-21
+
+* Collaborative troubleshooting on checklist functionality with Kevin(resolution-pending)
+* Resolved live chart information issue

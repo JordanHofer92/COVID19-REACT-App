@@ -5,7 +5,7 @@
     height: 5rem;
 }
 
-button {
+.zoomButton {
     border: 1px solid #26AFFF;
     background: none;
     width: 2rem;
