@@ -25,17 +25,21 @@
 .components-topnews-newsbox a, .components-topnews a {
     grid-area: title;
     font-size: 1.3rem;
-    color: #00f6ff;
+    color: #02182b;
+}
+
+a:hover {
+    color:#d7263d
 }
 
 .components-topnews-newsbox span {
     grid-area: author;
-    color: rgb(212, 212, 212);
+    color: #02182b;
 }
 
 .components-topnews-newsbox article {
     grid-area: description;
-    color: rgb(119, 206, 247);
+    color: #02182b;
     max-width: 50vw;
     place-self: center;
 }

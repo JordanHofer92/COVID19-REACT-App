@@ -1,9 +1,9 @@
 import React from 'react'
 
 const CountrySelector = () => {
+    
     return (
-    <select type="text"
-    id="graphCountry" >
+    <select id="graphCountry">
         <option value="Afganistan">Afghanistan</option>
         <option value="Albania">Albania</option>
         <option value="Algeria">Algeria</option>

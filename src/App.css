@@ -35,7 +35,7 @@ ul {
   display: grid;
   grid-template-areas: 
   "header"
-  "content"
+  "currentPage"
   "nav";
   grid-template-columns: 1fr;
   grid-template-rows: .5fr 4fr .5fr;
@@ -60,7 +60,7 @@ div.header h1 {
 div.components-map{
   margin: 10px;
   max-width: 100%;
-  grid-area: content;
+  grid-area: currentPage;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@ div.components-map{
 div.currentPage {
   max-width: 100%;
   margin: 10px;
-  grid-area: content;
+  grid-area: currentPage;
   display: flex;
   flex-direction: column;
   justify-content: center;

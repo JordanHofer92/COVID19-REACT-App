@@ -11,7 +11,7 @@ import LocalNewsButton from './Components/Components-NavBar/LocalNewsButton/Loca
 import WatchListButton from './Components/Components-NavBar/WatchListButton/WatchListButton.js'
 import CheckList from './Components/Components-CheckList/CheckList.js'
 // import WatchList from './Components/Components-WatchList/WatchList.js'
-import LocalNews from './Components/Components-LocalNews/LocalNews.js'
+import TopNews from './Components/Components-TopNews/TopNews.js'
 
 
 function App(props) {
@@ -28,7 +28,7 @@ function App(props) {
         <ComponentPage1 />
         <Switch>
           <Route path="/chart">
-            <Graph allInfo={props.allInfo}/>
+            <Graph allInfo={countryData}/>
           </Route>
           <Route path="/checkList">
             <CheckList
@@ -41,10 +41,10 @@ function App(props) {
             <Map allInfo={countryData} />
           </Route>
           <Route path="/watchList">
-            {/* <WatchList /> */}
+            {/* <WatchList allInfo={countryData}/> */}
           </Route>
           <Route path="/localNews">
-            <LocalNews newsData={newsData}/>
+            <TopNews newsData={newsData}/>
           </Route>
         </Switch>
         <nav className="NavButtons">

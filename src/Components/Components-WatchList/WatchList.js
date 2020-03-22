@@ -8,22 +8,23 @@ const WatchList = (props) => {
 			cases = element.cases;
 			deaths = element.deaths;
         })
+
         
 
 
     return (
         <div className="currentPage">
             <ol>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
-                <li>{country}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
+                <li>{country}/{cases}/{deaths}</li>
             </ol>
         </div>
     )
