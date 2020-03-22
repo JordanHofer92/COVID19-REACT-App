@@ -1,0 +1,41 @@
+.components-topnews-newsbox {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "image title"
+        "image author"
+        "image description";
+        grid-template-columns: 1fr 4fr;
+    border: oldlace 1px solid;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    width: calc(100vw - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.components-topnews-newsbox img {
+    grid-area: image;    
+    width: min-content;
+    max-width: 20vw;
+    height: min-content;
+    max-height: 14vh;
+}
+
+.components-topnews-newsbox a, .components-topnews a {
+    grid-area: title;
+    font-size: 1.3rem;
+    color: #00f6ff;
+}
+
+.components-topnews-newsbox span {
+    grid-area: author;
+    color: rgb(212, 212, 212);
+}
+
+.components-topnews-newsbox article {
+    grid-area: description;
+    color: rgb(119, 206, 247);
+    max-width: 50vw;
+    place-self: center;
+}
