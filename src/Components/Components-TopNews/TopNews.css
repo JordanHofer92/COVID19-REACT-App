@@ -7,6 +7,7 @@
         "image description";
         grid-template-columns: 1fr 4fr;
     border: oldlace 1px solid;
+    padding: 1rem;
     margin-bottom: 0.5rem;
     align-items: center;
     width: calc(100vw - 3rem);
@@ -24,18 +25,25 @@
 
 .components-topnews-newsbox a, .components-topnews a {
     grid-area: title;
-    font-size: 1.3rem;
-    color: #00f6ff;
+    font-size: 1.2rem;
+    color: black;
 }
 
 .components-topnews-newsbox span {
     grid-area: author;
-    color: rgb(212, 212, 212);
+    color: rgb(100, 88, 88);
 }
 
 .components-topnews-newsbox article {
     grid-area: description;
-    color: rgb(119, 206, 247);
+    color: rgb(0, 0, 0);
     max-width: 50vw;
     place-self: center;
+}
+
+.components-topnews-buttons {
+    display: flex;
+}
+.components-topnews-button {
+    margin-bottom: 7rem;
 }
