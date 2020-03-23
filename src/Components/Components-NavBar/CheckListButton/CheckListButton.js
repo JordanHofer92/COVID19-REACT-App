@@ -5,7 +5,7 @@ const CheckListButton = () => {
     <button className="checklistButton">
       <i className="fas fa-tasks"></i>
       <br></br>
-      Checklist
+      Check
     </button>
   );
 };

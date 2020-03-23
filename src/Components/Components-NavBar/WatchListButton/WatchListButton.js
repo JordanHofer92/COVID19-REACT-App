@@ -5,7 +5,7 @@ const WatchListButton = () => {
     return (
         <button className="watchlistButton">
             <i className="fas fa-eye"></i><br></br>
-            Watchlist
+            Top 10
         </button>
         
     )

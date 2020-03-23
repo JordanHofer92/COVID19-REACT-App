@@ -1,9 +1,12 @@
 import React from "react";
-import "../Components-Top/ComponentTopStyle.css";
 
-function ComponentsTop() {
+function ComponentsTop(props) {
+    let myStyle = {
+      color: props.logoColor,
+    }
+
   return (
-    <i className="fas fa-biohazard fa-4x"></i>
+    <i style={myStyle} className="fas fa-biohazard fa-4x"></i>
   );
 }
 
