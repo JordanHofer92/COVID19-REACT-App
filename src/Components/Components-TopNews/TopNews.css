@@ -6,7 +6,7 @@
         "image author"
         "image description";
         grid-template-columns: 1fr 4fr;
-    border: oldlace 1px solid;
+    border: oldlace 3px solid;
     margin-bottom: 0.5rem;
     align-items: center;
     width: calc(100vw - 3rem);

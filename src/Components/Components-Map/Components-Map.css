@@ -7,5 +7,6 @@ path:hover {
     width: 85%;
     left:50%;
     transform: translateX(-50%);
-    margin-top: 1rem;
+    margin-top: 1em;
+    margin-right: 6em;
 }

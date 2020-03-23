@@ -200,3 +200,9 @@ Work on getting top 10 countries to populate
 * Resolved live chart information issue
 * Re-styled for accessibility and consistency
 * Added menu in graph for Country Selection
+
+### 2020-03-22
+
+* More Styles applied
+* Inserted live info into Top 10 watchlist
+* Zoom conference with Ivan and Kevin to resolve any last minute issues
