@@ -6,6 +6,8 @@
         "image author"
         "image description";
         grid-template-columns: 1fr 4fr;
+
+    padding: 1rem;
     border: oldlace 3px solid;
     margin-bottom: 0.5rem;
     align-items: center;
@@ -42,4 +44,11 @@ a:hover {
     color: #02182b;
     max-width: 50vw;
     place-self: center;
+}
+
+.components-topnews-buttons {
+    display: flex;
+}
+.components-topnews-button {
+    margin-bottom: 7rem;
 }
