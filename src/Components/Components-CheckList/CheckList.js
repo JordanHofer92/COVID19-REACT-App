@@ -1,145 +1,92 @@
-import React from "react";
-import "./CheckList.css";
-const CheckList = props => {
-  const { handleAllChecked } = props;
+import React, {useState} from "react";
 
-  const checkIfAllChecked = () => {
-    const collection = document.getElementsByClassName("checks");
-    const checks = Array.from(collection);
-    const checked = checks.filter(c => c.checked === true);
-    if (checks.length === checked.length) {
-      handleAllChecked && handleAllChecked();
-    }
-  };
+
+const CheckList = (props) => {
+  const [checkedBox, setCheckBox] = useState(false)
+  const [checkedBox2, setCheckBox2] = useState(false)
+  const [checkedBox3, setCheckBox3] = useState(false)
+  const [checkedBox4, setCheckBox4] = useState(false)
+  const [checkedBox5, setCheckBox5] = useState(false)
+  const [checkedBox6, setCheckBox6] = useState(false)
+  const [checkedBox7, setCheckBox7] = useState(false)
+  const [checkedBox8, setCheckBox8] = useState(false)
+  const [checkedBox9, setCheckBox9] = useState(false)
+  const [checkedBox10, setCheckBox10] = useState(false)
+
+  if (checkedBox && checkedBox2 && checkedBox3 && checkedBox4 && checkedBox5 && checkedBox6 && checkedBox7 && checkedBox8 && checkedBox9 && checkedBox10){
+    props.changeLogoColor()
+  }else{
+    props.youArentReady()
+  }
 
   return (
     <div className="currentPage">
-      <h2> Checklist:</h2>
-      <form>
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="1"
-        />{" "}
+      <h1>Are You Ready for Coronavirus?</h1>
+      <form className="checkList">
+        <input type="checkbox" className="plan" value="1" onChange={()=>setCheckBox(!checkedBox)} />
         Make a plan of action
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="2"
-        />
+        <input type="checkbox" className="plan" value="2" onChange={()=>setCheckBox2(!checkedBox2)}/>
         Communicate with the people included in your plan
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="3"
-        />
+        <input type="checkbox" className="plan" value="3" onChange={()=>setCheckBox3(!checkedBox3)}/>
         Get to know your neighbours
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="4"
-        />{" "}
+        <input type="checkbox" className="plan" value="4" onChange={()=>setCheckBox4(!checkedBox4)} />
         Create an emergency contact list
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="5"
-        />
+        <input type="checkbox" className="plan" value="5" onChange={()=>setCheckBox5(!checkedBox5)}/>
         Practice everyday preventative actions
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="6"
-        />
+        <input type="checkbox" className="plan" vvalue="6" onChange={()=>setCheckBox6(!checkedBox6)}/>
         Choose a room in your home that can be used for isolation
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="7"
-        />
-        Don't panic buy, purchase small amounts of non-perishable foods during
-        your regular grocery trips
+        <input type="checkbox" className="plan" value="7" onChange={()=>setCheckBox7(!checkedBox7)}/>
+        Don't panic buy, spread out your purchases
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="8"
-        />
+        <input type="checkbox" className="plan" value="8" onChange={()=>setCheckBox8(!checkedBox8)}/>
         Practice Social distancing
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="9"
-        />
+        <input type="checkbox" className="plan" value="9" onChange={()=>setCheckBox9(!checkedBox9)}/>
         Stay home if you feel sick
         <br />
-        <input
-          onChange={checkIfAllChecked}
-          class="checks"
-          type="checkbox"
-          name="plan"
-          value="10"
-        />
+        <input type="checkbox" className="plan" value="10" onChange={()=>setCheckBox10(!checkedBox10)}/>
         Stay in touch with others through phone or email
         <br />
       </form>
-      <h2> Articles on Readiness:</h2>
-      <ul>
-        <li>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html"
-          >
-            CDC COVID-19 Preparation and Prevention
-          </a>
-        </li>
-        <li>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov"
-          >
-            WHO Coronavirus Database
-          </a>
-        </li>
-        <li>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="http://www.cidrap.umn.edu/infectious-disease-topics/covid-19"
-          >
-            CIDRAP COVID-19 Publication Index
-          </a>
-        </li>
-      </ul>
+      <div className="articles">
+        <h2>Articles to Prepare:</h2>
+        <ul>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html"
+            >
+              CDC COVID-19 Preparation and Prevention
+            </a>
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov"
+            >
+              WHO Coronavirus Database
+            </a>
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="http://www.cidrap.umn.edu/infectious-disease-topics/covid-19"
+            >
+              CIDRAP COVID-19 Publication Index
+            </a>
+          </li>
+        </ul>
+        </div>
     </div>
   );
 };
-
 export default CheckList;

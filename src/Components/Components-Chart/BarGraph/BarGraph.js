@@ -3,9 +3,10 @@ import { Bar } from "react-chartjs-2";
 import CountrySelector from '../CountrySelector/CountrySelector.js'
 
 
-var country, cases, todayCases, deaths, todayDeaths, recovered, critical;
 const Graph = (props) => {
-  const [selectedCountry, setSelectedCountry] = useState("Select Country");
+	var country, cases, todayCases, deaths, todayDeaths, recovered, critical;
+	var countryNames = props.allInfo[0].map(x => x.country)
+  	const [selectedCountry, setSelectedCountry] = useState("Afghanistan");
 	function changeSelectedCountry() {
 		setSelectedCountry(document.getElementById("graphCountry").value);
   }
@@ -18,10 +19,12 @@ const Graph = (props) => {
 			todayDeaths = element.todayDeaths;
 			recovered = element.recovered;
 			critical = element.critical;
-		}
-  });
+		} else if (!countryNames.includes(selectedCountry)) {
+                country = selectedCountry;
+	}
+})
  
-	const dataa = {
+	const data = {
 		labels: [
 			"Total Cases",
 			"New Cases Today",
@@ -31,8 +34,7 @@ const Graph = (props) => {
 			"Confirmed Recoveries"
     ],
 		datasets: [{
-      label: country,
-      // data: [12, 1, 2, 3, 2, 3],
+			label: country,
 			backgroundColor: [
 				"rgba(100,99,200,0.7)",
 				"rgba(22, 30, 181, 0.5)",
@@ -69,11 +71,12 @@ const Graph = (props) => {
 			data: [cases, todayCases, critical, deaths, todayDeaths, recovered]
     }]
 	};
+
 	return (
 		<div className="currentPage">
 			<h2>COVID-19 in {country}</h2>
 			<Bar
-				data={dataa}
+				data={data}
 				width={300}
 				height={250}
 				options={{
@@ -81,8 +84,7 @@ const Graph = (props) => {
 				}}
 			/>
 			<form>
-				<button className="graphCountryButton" onClick={changeSelectedCountry}>Select Country</button>
-				<CountrySelector/>
+				<CountrySelector changeSelectedCountry={changeSelectedCountry}/>
 			</form>
 		</div>
 	);

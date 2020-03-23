@@ -1,10 +1,9 @@
 import React from 'react'
 
-const CountrySelector = () => {
+const CountrySelector = (props) => {
     return (
-    <select type="text"
-    id="graphCountry" >
-        <option value="Afganistan">Afghanistan</option>
+    <select id="graphCountry" onChange={props.changeSelectedCountry}>
+        <option value="Afghanistan">Afghanistan</option>
         <option value="Albania">Albania</option>
         <option value="Algeria">Algeria</option>
         <option value="American Samoa">American Samoa</option>
@@ -33,7 +32,6 @@ const CountrySelector = () => {
         <option value="Bosnia/Herzegovina">Bosnia/Herzegovina</option>
         <option value="Botswana">Botswana</option>
         <option value="Brazil">Brazil</option>
-        <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
         <option value="Brunei">Brunei</option>
         <option value="Bulgaria">Bulgaria</option>
         <option value="Burkina Faso">Burkina Faso</option>
@@ -117,8 +115,8 @@ const CountrySelector = () => {
         <option value="Kazakhstan">Kazakhstan</option>
         <option value="Kenya">Kenya</option>
         <option value="Kiribati">Kiribati</option>
-        <option value="Korea North">Korea North</option>
-        <option value="Korea Sout">Korea South</option>
+        <option value="N. Korea">North Korea</option>
+        <option value="S. Korea">South Korea</option>
         <option value="Kuwait">Kuwait</option>
         <option value="Kyrgyzstan">Kyrgyzstan</option>
         <option value="Laos">Laos</option>
@@ -235,7 +233,7 @@ const CountrySelector = () => {
         <option value="United Kingdom">United Kingdom</option>
         <option value="Ukraine">Ukraine</option>
         <option value="United Arab Erimates">United Arab Emirates</option>
-        <option value="United States of America">United States of America</option>
+        <option value="USA">USA</option>
         <option value="Uraguay">Uruguay</option>
         <option value="Uzbekistan">Uzbekistan</option>
         <option value="Vanuatu">Vanuatu</option>

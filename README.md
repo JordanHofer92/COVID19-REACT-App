@@ -226,5 +226,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 * Collaborative troubleshooting on checklist functionality with Kevin(resolution-pending)
 * Resolved live chart information issue
 * Re-styled for accessibility and consistency
-* Added menu in graph for Coutnry Selection
+* Added menu in graph for Country Selection
 
+### 2020-03-22
+
+* More Styles applied
+* Inserted live info into Top 10 watchlist
+* Zoom conference with Ivan and Kevin to resolve any last minute issues
