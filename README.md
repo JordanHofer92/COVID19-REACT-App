@@ -102,18 +102,29 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 1. One on one with instructor -help with geolocation and callbacks
 2. Completed checklist
 
-03 19 20
+### 03 19 20
 
 1. Trying to find a simpler solution for checklist
 2. Some minor styling
 
-03 20 20
+### 03 20 20
 
 1. Several zoom calls
 2. Some more checklist work
 
-03 21 20
-Work on getting top 10 countries to populate
+### 03 21 20
+
+1. Work on getting top 10 countries to populate
+
+### 03 21 20
+
+1. Rework Checklist
+2. Some styling.
+
+### 03 22 20
+
+1. Worked on Styling Checklist
+2. Spent a few hours on zoom with Jordan and Ivan finalizing the app.
 
 ## Ivan
 
@@ -148,6 +159,22 @@ Work on getting top 10 countries to populate
 
 1.  fixed the bug noticed yesterday;
 2.  completed basic zoom in and out effects, still need to work on drap-able function for the map.
+
+### 2020-03-20
+
+1. zoom chat, received new project from UI/UX team.
+2. worked on getting user's geo location, system couldn't compile.
+
+### 2020-03-21
+
+1. fixed bug in BarGraph.js;
+2. changed structure in TopNews.js, so that each news is a box instead of a line.
+
+### 2020-03-22
+
+1. fixed bug with teammates on multiple files.
+2. completed change page function in TopNews.js.
+
 
 ## Jordan
 
@@ -184,15 +211,15 @@ Work on getting top 10 countries to populate
 
 ### 2020-03-19
 
-* Imported google fonts
-* Applied styles
+- Imported google fonts
+- Applied styles
 
 ### 2020-03-20
 
-* Extended Project deadline to Monday
-* Received community client project
-* Assembled and sent project brief to Client
-* Collaborative troubleshooting on live chart information with Ivan(resolution-pending)
+- Extended Project deadline to Monday
+- Received community client project
+- Assembled and sent project brief to Client
+- Collaborative troubleshooting on live chart information with Ivan(resolution-pending)
 
 ### 2020-03-21
 
