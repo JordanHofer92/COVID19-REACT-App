@@ -160,6 +160,22 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 1.  fixed the bug noticed yesterday;
 2.  completed basic zoom in and out effects, still need to work on drap-able function for the map.
 
+### 2020-03-20
+
+1. zoom chat, received new project from UI/UX team.
+2. worked on getting user's geo location, system couldn't compile.
+
+### 2020-03-21
+
+1. fixed bug in BarGraph.js;
+2. changed structure in TopNews.js, so that each news is a box instead of a line.
+
+### 2020-03-22
+
+1. fixed bug with teammates on multiple files.
+2. completed change page function in TopNews.js.
+
+
 ## Jordan
 
 ### 2020-03-14
@@ -207,7 +223,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2020-03-21
 
-- Collaborative troubleshooting on checklist functionality with Kevin(resolution-pending)
-- Resolved live chart information issue
-- Re-styled for accessibility and consistency
-- Added menu in graph for Coutnry Selection
+* Collaborative troubleshooting on checklist functionality with Kevin(resolution-pending)
+* Resolved live chart information issue
+* Re-styled for accessibility and consistency
+* Added menu in graph for Coutnry Selection
+
