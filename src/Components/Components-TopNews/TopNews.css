@@ -48,7 +48,9 @@ a:hover {
 
 .components-topnews-buttons {
     display: flex;
+    justify-content: space-evenly;
 }
+
 .components-topnews-button {
     margin-bottom: 7rem;
 }
