@@ -3,9 +3,9 @@ import React from "react";
 const CheckListButton = () => {
   return (
     <button className="checklistButton">
-      <i className="fas fa-tasks"></i>
+      <i className="fas fa-tasks fa-2x"></i>
       <br></br>
-      Check
+      Checklist
     </button>
   );
 };

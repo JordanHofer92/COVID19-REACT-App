@@ -4,7 +4,7 @@ const LocalNewsButton = () => {
 
     return (
         <button className="localnewsButton">
-            <i className="far fa-newspaper"></i><br></br>
+            <i className="far fa-newspaper fa-2x"></i><br></br>
             News
         </button>
         

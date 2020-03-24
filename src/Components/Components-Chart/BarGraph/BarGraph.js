@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Bar } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import CountrySelector from '../CountrySelector/CountrySelector.js'
 
 
@@ -37,15 +37,15 @@ const Graph = (props) => {
 			label: country,
 			backgroundColor: [
 				"rgba(100,99,200,0.7)",
-				"rgba(22, 30, 181, 0.5)",
+				"rgba(22, 30, 181, 0.8)",
 				"rgba(255,99,132,0.7)",
 				"rgba(239, 9, 36, 0.7)",
 				"rgba(239, 9, 36, 0.7)",
-				"rgba(32, 243, 106, 0.7)"
+				"rgba(32, 243, 106, 0.5)"
 			],
 			borderColor: [
 				"rgba(100,99,132,1)",
-				"rgba(22, 30, 181, 1)",
+				"rgba(22, 30, 181, 0.3)",
 				"rgba(255,99,132,1)",
 				"rgba(239, 9, 36, 1)",
 				"rgba(239, 9, 36, 1)",
@@ -75,7 +75,7 @@ const Graph = (props) => {
 	return (
 		<div className="currentPage">
 			<h2>COVID-19 in {country}</h2>
-			<Bar
+			<Doughnut
 				data={data}
 				width={300}
 				height={250}
