@@ -1,28 +1,27 @@
-
-body{
-  max-width: 100%;
-  margin: 0;
-  background-color: #bedaf2;
-  color: #02182b;
-  font-family: 'Baloo Chettan 2';
-  font-weight: 600
+body {
+    max-width: 100%;
+    margin: 0;
+    background-color: #bedaf2;
+    color: #02182b;
+    font-family: "Baloo Chettan 2";
+    font-weight: 600;
 }
 
 h1 {
-  color: #02182b;
-  font-weight: 700;
+    color: #02182b;
+    font-weight: 700;
 }
 
 a {
-  color: #02182b;
+    color: #02182b;
 }
 
 a:hover {
-  color: #d7263d;
+    color: #d7263d;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .App {
@@ -39,34 +38,34 @@ ul {
 }
 
 div.header {
-  background:#26AFFF;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: header;
-  z-index: 99;
+    background: #26afff;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    z-index: 99;
 }
 
-i.fa-biohazard{
-  color: #d7263d;
+i.fa-biohazard {
+    color: #d7263d;
 }
 
 div.header h1 {
   margin: 5px;
 }
 
-div.components-map{
-  margin: 10px;
-  max-width: 100%;
-  grid-area: currentPage;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+div.components-map {
+    margin: 10px;
+    max-width: 100%;
+    grid-area: currentPage;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div.currentPage {
@@ -80,27 +79,31 @@ div.currentPage {
 }
 
 select {
-  height: 2em;
-  font-size: 1em;
-  margin-top: 2em;
+    height: 2em;
+    font-size: 1em;
+    margin-top: 2em;
 }
 
 label {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
-.articles ul{
-  margin-right: 3em;
-  margin-bottom: 3em;
+.articles ul {
+    margin-right: 3em;
+    margin-bottom: 3em;
 }
 
 .watchList ol {
-  margin-bottom: 5em;
-  overflow-y: hidden;
+    margin-bottom: 5em;
+    overflow-y: hidden;
 }
 
-.watchList span{
-  color: #d7263d;
+.watchList li {
+    margin-bottom: 2%;
+}
+
+.watchList span {
+    color: #d7263d;
 }
 
 .checkList {
@@ -115,21 +118,20 @@ label {
 }
 
 .graphCountryButton {
-  height: 3em;
-  font-size: 13px;
+    height: 3em;
+    font-size: 13px;
 }
 
 nav {
-  position: fixed;
-  bottom: 0;
-  background-color: #26AFFF;
-  width: 100%;
-  grid-area: nav;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #26afff;
+    width: 100%;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 nav button {
   border: none;
@@ -142,11 +144,10 @@ nav button {
 }
 
 button:focus {
-  outline: none;
-  background-color: #d7263d;
-
+    outline: none;
+    background-color: #d7263d;
 }
 
 button:target {
-  background-color: #d7263d;
+    background-color: #d7263d;
 }
