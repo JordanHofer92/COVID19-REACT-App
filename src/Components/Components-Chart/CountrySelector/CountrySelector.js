@@ -230,7 +230,7 @@ const CountrySelector = (props) => {
         <option value="Turks/Caicos Is">Turks/Caicos Is</option>
         <option value="Tuvalu">Tuvalu</option>
         <option value="Uganda">Uganda</option>
-        <option value="United Kingdom">United Kingdom</option>
+        <option value="UK">United Kingdom</option>
         <option value="Ukraine">Ukraine</option>
         <option value="United Arab Erimates">United Arab Emirates</option>
         <option value="USA">USA</option>

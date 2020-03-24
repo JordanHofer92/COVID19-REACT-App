@@ -4,7 +4,7 @@ const MapButton = () => {
 
     return (
         <button className="mapButton">
-            <i className="fas fa-globe"></i><br></br>
+            <i className="fas fa-globe fa-2x"></i><br></br>
             Map
         </button>
         

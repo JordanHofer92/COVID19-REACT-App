@@ -21,41 +21,23 @@ const CheckList = (props) => {
 
   return (
     <div className="currentPage">
-      <h1>Are You Ready for Coronavirus?</h1>
-      <form className="checkList">
-        <input type="checkbox" className="plan" value="1" onChange={()=>setCheckBox(!checkedBox)} />
-        Make a plan of action
-        <br />
-        <input type="checkbox" className="plan" value="2" onChange={()=>setCheckBox2(!checkedBox2)}/>
-        Communicate with the people included in your plan
-        <br />
-        <input type="checkbox" className="plan" value="3" onChange={()=>setCheckBox3(!checkedBox3)}/>
-        Get to know your neighbours
-        <br />
-        <input type="checkbox" className="plan" value="4" onChange={()=>setCheckBox4(!checkedBox4)} />
-        Create an emergency contact list
-        <br />
-        <input type="checkbox" className="plan" value="5" onChange={()=>setCheckBox5(!checkedBox5)}/>
-        Practice everyday preventative actions
-        <br />
-        <input type="checkbox" className="plan" vvalue="6" onChange={()=>setCheckBox6(!checkedBox6)}/>
-        Choose a room in your home that can be used for isolation
-        <br />
-        <input type="checkbox" className="plan" value="7" onChange={()=>setCheckBox7(!checkedBox7)}/>
-        Don't panic buy, spread out your purchases
-        <br />
-        <input type="checkbox" className="plan" value="8" onChange={()=>setCheckBox8(!checkedBox8)}/>
-        Practice Social distancing
-        <br />
-        <input type="checkbox" className="plan" value="9" onChange={()=>setCheckBox9(!checkedBox9)}/>
-        Stay home if you feel sick
-        <br />
-        <input type="checkbox" className="plan" value="10" onChange={()=>setCheckBox10(!checkedBox10)}/>
-        Stay in touch with others through phone or email
-        <br />
-      </form>
+        <h1>Are You Ready for Coronavirus?</h1>
+        <form>
+          <div className="checkList">
+            <label><input type="checkbox" className="plan" value="1" onChange={()=>setCheckBox(!checkedBox)} />Make a plan of action</label><br/>
+            <label><input type="checkbox" className="plan" value="2" onChange={()=>setCheckBox2(!checkedBox2)}/>Communicate with the people included in your plan</label><br/>
+            <label><input type="checkbox" className="plan" value="3" onChange={()=>setCheckBox3(!checkedBox3)}/>Get to know your neighbours</label><br/>
+            <label><input type="checkbox" className="plan" value="4" onChange={()=>setCheckBox4(!checkedBox4)} />Create an emergency contact list</label><br/>
+            <label><input type="checkbox" className="plan" value="5" onChange={()=>setCheckBox5(!checkedBox5)}/>Practice everyday preventative actions</label><br/>
+            <label><input type="checkbox" className="plan" vvalue="6" onChange={()=>setCheckBox6(!checkedBox6)}/>Choose a room in your home that can be used for isolation</label><br/>
+            <label><input type="checkbox" className="plan" value="7" onChange={()=>setCheckBox7(!checkedBox7)}/>Don't panic buy, spread out your purchases</label><br/>
+            <label><input type="checkbox" className="plan" value="8" onChange={()=>setCheckBox8(!checkedBox8)}/>Practice Social distancing</label><br/>
+            <label><input type="checkbox" className="plan" value="9" onChange={()=>setCheckBox9(!checkedBox9)}/>Stay home if you feel sick</label><br/>
+            <label><input type="checkbox" className="plan" value="10" onChange={()=>setCheckBox10(!checkedBox10)}/>Stay in touch with others through phone or email</label>
+          </div>
+        </form>
       <div className="articles">
-        <h2>Articles to Prepare:</h2>
+        <h2>Official Articles:</h2>
         <ul>
           <li>
             <a

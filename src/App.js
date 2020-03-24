@@ -26,13 +26,18 @@ function App(props) {
   // Assign API data to variables
   const countryData = [props.allInfo[0], props.allInfo[1]];
   const newsData = props.allInfo[2].articles;
-  
+  console.log(countryData)
 
   return (
     <Router>
       <div className="App">
         <Header logoColor={logoColor} />
         <Switch>
+          <Route exact path="/">
+            <CheckList changeLogoColor={changeLogoColor}
+              youArentReady={youArentReady}
+              />
+          </Route>
           <Route path="/chart">
             <Graph allInfo={countryData}/>
           </Route>

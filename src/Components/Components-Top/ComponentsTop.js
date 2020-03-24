@@ -6,7 +6,7 @@ function ComponentsTop(props) {
     }
 
   return (
-    <i style={myStyle} className="fas fa-biohazard fa-4x"></i>
+    <i style={myStyle} className="fas fa-biohazard fa-3x"></i>
   );
 }
 

@@ -35,7 +35,7 @@ ul {
   "currentPage"
   "nav";
   grid-template-columns: 1fr;
-  grid-template-rows: .5fr 4fr .5fr;
+  grid-template-rows: 1fr 6fr 1fr;
 }
 
 div.header {
@@ -56,7 +56,7 @@ i.fa-biohazard{
 }
 
 div.header h1 {
-  margin: 10px;
+  margin: 5px;
 }
 
 div.components-map{
@@ -71,9 +71,8 @@ div.components-map{
 
 div.currentPage {
   max-width: 100%;
-  margin: 10px;
   margin-top: 5em;
-  margin-bottom: 5em;
+  margin-bottom: 6em;
   grid-area: currentPage;
   display: flex;
   flex-direction: column;
@@ -105,14 +104,14 @@ label {
 }
 
 .checkList {
-  text-align: start;
-  margin-left: 2em;
-  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 25%;
 }
 
-input.plan {
-  height: 20px;
-  width: 3em;
+.plan {
+  margin-right: 10px;
 }
 
 .graphCountryButton {
@@ -132,12 +131,12 @@ nav {
 }
 
 
-button {
+nav button {
   border: none;
   font-family: 'Baloo Chettan 2';
-  font-size: 16px;
+  font-size: 14px;
   height: 6em;
-  width: 15vw;
+  width: 18vw;
   color: #02182b;
   background-color: #26AFFF;
 }
