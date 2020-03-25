@@ -5,6 +5,7 @@ const WatchList = (props) => {
     
     return (
         <div className="currentPage watchList">
+            <h1>Top Affected Countries</h1>
             <ol>
                 <li>{props.allInfo[0][0].country}<br></br> <span>Total Confirmed Cases: </span>{props.allInfo[0][0].cases}<br></br> <span>Total Confirmed Deaths: </span>{props.allInfo[0][0].deaths}</li>
                 <li>{props.allInfo[0][1].country}<br></br> <span>Total Confirmed Cases: </span>{props.allInfo[0][1].cases}<br></br> <span>Total Confirmed Deaths: </span>{props.allInfo[0][1].deaths}</li>
