@@ -14,7 +14,7 @@ const CheckList = (props) => {
   const [checkedBox10, setCheckBox10] = useState(false)
 
   if (checkedBox && checkedBox2 && checkedBox3 && checkedBox4 && checkedBox5 && checkedBox6 && checkedBox7 && checkedBox8 && checkedBox9 && checkedBox10){
-    props.changeLogoColor()
+    props.youAreReady()
   }else{
     props.youArentReady()
   }

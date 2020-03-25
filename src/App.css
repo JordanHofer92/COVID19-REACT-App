@@ -93,13 +93,25 @@ label {
     margin-bottom: 3em;
 }
 
+.watchList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    position: relative;
+    margin: 0 auto;
+}
+
+.watchList h1{
+    margin-left: 1em;
+}
+
 .watchList ol {
-    margin-bottom: 5em;
-    overflow-y: hidden;
+    margin-top: 2em;
 }
 
 .watchList li {
-    margin-bottom: 2%;
+    margin-bottom: 3em;
 }
 
 .watchList span {
