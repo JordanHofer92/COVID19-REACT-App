@@ -18,7 +18,7 @@ function App(props) {
   const [logoColor, setLogoColor] = useState('red');
   function youAreReady() {
     setLogoColor('green');
-    alert('You are very well prepared!')
+    alert('You are very well prepared!');
   }
   function youArentReady() {
     setLogoColor('red')

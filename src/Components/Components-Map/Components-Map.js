@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Components-Map.css";
-import Top from "./Components-Map-Top/Components-Map-Top.js";
+// import Top from "./Components-Map-Top/Components-Map-Top.js";
 
 const Map = (props) => {
   // Define the country clicked by user
@@ -12,21 +12,21 @@ const Map = (props) => {
   const myViewBox = [0, 0, viewBoxWidth, viewBoxHeight]
 
   // Define functions to zoom-in and zoom-out with "+" and "-" button
-  function increaseViewBoxWidth() {
-    setViewBoxWidth(viewBoxWidth*(1.2))
-  }
+  // function increaseViewBoxWidth() {
+  //   setViewBoxWidth(viewBoxWidth*(1.2))
+  // }
 
-  function decreaseViewBoxWidth() {
-    setViewBoxWidth(viewBoxWidth/(1.2))
-  }
+  // function decreaseViewBoxWidth() {
+  //   setViewBoxWidth(viewBoxWidth/(1.2))
+  // }
 
-  function increaseViewBoxHeight() {
-    setViewBoxHeight(viewBoxHeight*(1.2))
-  }
+  // function increaseViewBoxHeight() {
+  //   setViewBoxHeight(viewBoxHeight*(1.2))
+  // }
 
-  function decreaseViewBoxHeight() {
-    setViewBoxHeight(viewBoxHeight/(1.2))
-  }
+  // function decreaseViewBoxHeight() {
+  //   setViewBoxHeight(viewBoxHeight/(1.2))
+  // }
 
 
 // Sudo code for zoom to clicked country:
@@ -2097,14 +2097,14 @@ const Map = (props) => {
           </clipPath>
         </defs>
       </svg>
-      <Top 
+      {/* <Top 
         allInfo={props.allInfo} 
         clickedCountry={clickedCountry} 
         increaseViewBoxWidth={increaseViewBoxWidth}
         increaseViewBoxHeight={increaseViewBoxHeight}
         decreaseViewBoxWidth={decreaseViewBoxWidth}
         decreaseViewBoxHeight={decreaseViewBoxHeight} 
-      />
+      /> */}
     </div>
   );
 };
