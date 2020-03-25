@@ -16,8 +16,9 @@ import TopNews from './Components/Components-TopNews/TopNews.js'
 
 function App(props) {
   const [logoColor, setLogoColor] = useState('red');
-  function changeLogoColor() {
+  function youAreReady() {
     setLogoColor('green');
+    alert('You are very well prepared!')
   }
   function youArentReady() {
     setLogoColor('red')
@@ -34,7 +35,7 @@ function App(props) {
         <Header logoColor={logoColor} />
         <Switch>
           <Route exact path="/">
-            <CheckList changeLogoColor={changeLogoColor}
+            <CheckList youAreReady={youAreReady}
               youArentReady={youArentReady}
               />
           </Route>
@@ -43,7 +44,7 @@ function App(props) {
           </Route>
           <Route path="/checkList">
             <CheckList
-              changeLogoColor={changeLogoColor}
+              youAreReady={youAreReady}
               youArentReady={youArentReady}
             />
           </Route>
