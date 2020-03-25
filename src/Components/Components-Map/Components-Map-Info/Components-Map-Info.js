@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Components-Map-Info.css"
 import Button from "../Component-Map-Button/Component-Map-Top-Button.js"
-
+import CountrySelector from '../../Components-Chart/CountrySelector/CountrySelector.js'
 
 const Text = (props) => {
     var countryData;
@@ -27,6 +27,7 @@ const Text = (props) => {
     return (
         <section className="components-map-zoom">
             <h1>COVID-19 Global Cases Update</h1>
+            <CountrySelector changeSelectedCountry={props.changeSelectedCountry}/>
             <div className="components-map-infoAndButton">
                 <div>
                     <span>Country: {countryData.country}</span>

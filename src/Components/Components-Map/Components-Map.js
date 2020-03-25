@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./Components-Map.css";
-import Top from "./Components-Map-Info/Components-Map-Info.js";
+import Info from "./Components-Map-Info/Components-Map-Info.js";
 
 const Map = (props) => {
   // Define the country clicked by user
   const [clickedCountry, setClickedCountry] = useState("Canada");
+  function changeSelectedCountry() {
+    setClickedCountry(document.getElementById("graphCountry").value)
+  }
   
   // Define states of viewbox size
   const [viewBoxWidth, setViewBoxWidth] = useState(1010);
@@ -2082,9 +2085,10 @@ const Map = (props) => {
           </clipPath>
         </defs>
       </svg>
-      <Top 
+      <Info 
         allInfo={props.allInfo} 
-        clickedCountry={clickedCountry} 
+        clickedCountry={clickedCountry}
+        changeSelectedCountry={changeSelectedCountry}
         increaseViewBoxWidth={increaseViewBoxWidth}
         increaseViewBoxHeight={increaseViewBoxHeight}
         decreaseViewBoxWidth={decreaseViewBoxWidth}
