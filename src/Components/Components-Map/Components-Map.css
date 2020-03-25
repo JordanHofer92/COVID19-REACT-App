@@ -1,12 +1,15 @@
 path:hover {
     fill: #0586AA;
 }
+path:focus {
+    fill: black;
+}
 
 #worldMap {
     position: relative;
     width: 85%;
     left:50%;
     transform: translateX(-50%);
-    margin-top: 1em;
-    margin-right: 6em;
+    margin-top: 7rem;
+    margin-right: 6rem;
 }

@@ -1,0 +1,15 @@
+#component-map-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.zoomButton {
+    border: 1px solid #02182b;
+    background: none;
+    width: 2rem;
+    height: min-content;
+    color: #02182b;
+    font-size: 1.5rem;
+}
