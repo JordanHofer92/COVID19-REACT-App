@@ -162,7 +162,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2020-03-20
 
-1. zoom chat, received new project from UI/UX team.
+1. zoom chat, received new project from UI/UX team;
 2. worked on getting user's geo location, system couldn't compile.
 
 ### 2020-03-21
@@ -172,9 +172,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2020-03-22
 
-1. fixed bug with teammates on multiple files.
+1. fixed bug with teammates on multiple files;
 2. completed change page function in TopNews.js.
 
+### 2020-03-24
+
+1. changed layout in map section based on mock presentation feedback;
+2. changed layout in news section based on mock presentation feedback.
 
 ## Jordan
 

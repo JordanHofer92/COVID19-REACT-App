@@ -1,0 +1,38 @@
+.components-map-zoom {
+    width: 60%;
+}
+
+.components-map-top, .components-map-infoAndButton div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.components-map-infoAndButton {
+    place-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 7rem;
+}
+
+.components-map-infoAndButton div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #02182b;
+    padding: 1rem;
+    width:38%;
+    border: 1px rgb(199, 198, 198) solid;
+}
+
+h1 {
+    font-size: 1.5em;
+    place-self: center;
+}
+
+span {
+    font-size: 1em;
+}
