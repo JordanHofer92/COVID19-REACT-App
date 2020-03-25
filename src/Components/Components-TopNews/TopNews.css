@@ -2,24 +2,22 @@
     position: relative;
     display: grid;
     grid-template-areas: 
-        "image title"
-        "image author"
-        "image description";
-        grid-template-columns: 1fr 4fr;
-
+        "image"
+        "title"
+        "author";
+    place-items: center;
     padding: 1rem;
     border: oldlace 3px solid;
     margin-bottom: 0.5rem;
     align-items: center;
-    width: calc(100vw - 3rem);
+    width: calc(100vw - 5rem);
     left: 50%;
     transform: translateX(-50%);
 }
 
 .components-topnews-newsbox img {
     grid-area: image;    
-    width: min-content;
-    max-width: 20vw;
+    width: 18rem;
     height: min-content;
     max-height: 14vh;
 }
@@ -30,7 +28,7 @@
     color: #02182b;
 }
 
-a:hover {
+.components-topnews-newsbox a:hover {
     color:#d7263d
 }
 
@@ -40,10 +38,7 @@ a:hover {
 }
 
 .components-topnews-newsbox article {
-    grid-area: description;
-    color: #02182b;
-    max-width: 50vw;
-    place-self: center;
+    display: none;
 }
 
 .components-topnews-buttons {
@@ -53,4 +48,67 @@ a:hover {
 
 .components-topnews-button {
     margin-bottom: 7rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .components-topnews-newsbox {
+        position: relative;
+        display: grid;
+        grid-template-areas: 
+            "image title"
+            "image author";
+        grid-template-columns: 1fr 4fr;
+        padding: 1rem;
+        column-gap: 2rem;
+        border: oldlace 3px solid;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        width: calc(100vw - 5rem);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .components-topnews-newsbox img {
+        grid-area: image;    
+        width: min-content;
+        max-width: 18rem;
+        height: min-content;
+        max-height: 14vh;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .components-topnews-newsbox {
+        position: relative;
+        display: grid;
+        grid-template-areas: 
+        "image title"
+        "image author"
+        "image description";
+        grid-template-columns: 1fr 4fr;
+        padding: 1rem;
+        column-count: 2rem;
+        row-gap: 1rem;
+        border: oldlace 3px solid;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        width: calc(100vw - 5rem);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .components-topnews-newsbox article {
+        display: initial;
+        grid-area: description;
+        font-size: 0.9rem;
+        max-width: 30rem;
+        text-align: start;
+    }
+
+    .components-topnews-newsbox img {
+        grid-area: image;    
+        width: 18rem;
+        height: min-content;
+        max-height: 17vh;
+    }
 }
