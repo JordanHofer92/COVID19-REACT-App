@@ -1,8 +1,8 @@
-.component-map-button {
+#component-map-button {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .zoomButton {

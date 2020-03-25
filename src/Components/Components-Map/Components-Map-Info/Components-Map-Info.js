@@ -1,6 +1,6 @@
 import React from 'react'
-import "./Components-Map-Top.css"
-import Button from "./Component-Map-Button/Component-Map-Top-Button.js"
+import "./Components-Map-Info.css"
+import Button from "../Component-Map-Button/Component-Map-Top-Button.js"
 
 
 const Text = (props) => {
@@ -13,7 +13,7 @@ const Text = (props) => {
             countryData = element;
         } else if (!countryNames.includes(clickedCountry)) {
             countryData = {
-                country: "no data",
+                country: clickedCountry,
                 cases: "no data",
                 todayCases: "no data",
                 deaths: "no data",
@@ -25,7 +25,7 @@ const Text = (props) => {
         
     });
     return (
-        <section className="components-map-top">
+        <section className="components-map-zoom">
             <h1>COVID-19 Global Cases Update</h1>
             <div className="components-map-infoAndButton">
                 <div>
