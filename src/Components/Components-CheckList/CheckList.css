@@ -1,0 +1,8 @@
+#checkList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+    position: relative;
+    margin: 0 auto;
+}
