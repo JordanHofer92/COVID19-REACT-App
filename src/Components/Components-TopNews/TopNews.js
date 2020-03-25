@@ -23,7 +23,7 @@ const LocalNews = (props) => {
         <section className="currentPage components-topnews">
             <h1>Latest News on COVID-19</h1>
             <span>News is powered by <a href="https://newsapi.org/">newsapi.org</a></span>
-            <div>
+            <div className="components-topnews-newsboxs">
                 <div className="components-topnews-newsbox">
                     <a target="_blank" rel="noopener noreferrer" href={props.newsData[page[0]].url}>{props.newsData[page[0]].title}</a>
                     <span>Author: {props.newsData[page[0]].author}</span>
