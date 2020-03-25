@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import "./CheckList.css"
 
 const CheckList = (props) => {
   const [checkedBox, setCheckBox] = useState(false)
@@ -22,8 +22,8 @@ const CheckList = (props) => {
   return (
     <div className="currentPage">
         <form>
-          <div className="checkList">
           <h1>Are You Ready for Coronavirus?</h1>
+          <div id="checkList">
             <label><input type="checkbox" className="plan" value="1" onChange={()=>setCheckBox(!checkedBox)} />Make a plan of action</label><br/>
             <label><input type="checkbox" className="plan" value="2" onChange={()=>setCheckBox2(!checkedBox2)}/>Communicate your plan to those included</label><br/>
             <label><input type="checkbox" className="plan" value="3" onChange={()=>setCheckBox3(!checkedBox3)}/>Get to know your neighbours</label><br/>
