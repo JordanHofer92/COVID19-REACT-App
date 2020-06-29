@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 // data for each country
 const getCountriesInfo = async function () {
     const response = await fetch(
-        "https://corona.lmao.ninja/countries"
+        "https://corona.lmao.ninja/v2/countries"
     );
     var countriesInfo = await response.json();
     return countriesInfo;
@@ -15,7 +15,7 @@ const getCountriesInfo = async function () {
 // data for the whole world
 const getTotalInfo = async function () {
     const response = await fetch(
-        "https://corona.lmao.ninja/all"
+        "https://corona.lmao.ninja/v2/all"
     );
     var totalInfo = await response.json();
     return totalInfo;
